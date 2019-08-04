@@ -1,0 +1,31 @@
+{
+  "name": "telelib",
+  "version": "1.0.0",
+  "description": "An interface for the Telegram Bot API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puppy0cam/telelib.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "api",
+    "teleelib",
+    "tg"
+  ],
+  "author": "puppy0cam",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/puppy0cam/telelib/issues"
+  },
+  "homepage": "https://github.com/puppy0cam/telelib#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "type": "module"
+}
