@@ -1,0 +1,51 @@
+import isPrimitive from "./isPrimitive.js";
+export default function createReplacerForAllInstancesOfValueInObjectStructure(replace, replaceWith) {
+    "use strict";
+    const cache = new WeakMap();
+    return function replaceAllInstancesOfValueInObjectStructure(data) {
+        "use strict";
+        try {
+            if (cache.has(data)) {
+                throw new Error("Cannot have a circular reference");
+            } else if (data === replace) {
+                return replaceWith;
+            } else if (Array.isArray(data)) {
+                const value = [];
+                cache.set(data, value);
+                for (const instance of data) {
+                    const val = replaceAllInstancesOfValueInObjectStructure(instance);
+                    if (val != null) {
+                        value.push(val);
+                    }
+                }
+                if (value.length === 0) {
+                    return null;
+                } else {
+                    return value;
+                }
+            } else if (!isPrimitive(data)) {
+                const result = {};
+                cache.set(data, result);
+                let count = 0;
+                for (const key in data) {
+                    const value = replaceAllInstancesOfValueInObjectStructure(data[key]);
+                    if (value != null) {
+                        result[key] = value;
+                        count++;
+                    }
+                }
+                if (count === 0) {
+                    return null;
+                } else {
+                    return result;
+                }
+            } else if (data == null) {
+                return null;
+            } else {
+                return data;
+            }
+        } finally {
+            cache.delete(data);
+        }
+    }
+}

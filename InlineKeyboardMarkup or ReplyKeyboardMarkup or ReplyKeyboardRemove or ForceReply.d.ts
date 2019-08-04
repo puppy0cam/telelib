@@ -1,0 +1,8 @@
+import InlineKeyboardMarkup from "./InlineKeyboardMarkup";
+import ReplyKeyboardMarkup from "./ReplyKeyboardMarkup";
+import ReplyKeyboardRemove from "./ReplyKeyboardRemove";
+import ForceReply from "./ForceReply";
+
+declare type InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply = InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply;
+declare function InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply(data: InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply, token?: string): InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply;
+export default InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply;
