@@ -20,4 +20,18 @@ export default class StickerSet extends Bot {
         this.contains_masks = Boolean(contains_masks);
         this.stickers = Array_of_Sticker(stickers, _token);
     }
+    #getMethodOptions = function(options) {
+        "use strict";
+        return Object.assign({
+            name: this.name,
+        }, options);
+    }
+    getStickerSet(options) {
+        "use strict";
+        return super.getStickerSet(this.#getMethodOptions(options));
+    }
+    addStickerToSet(options) {
+        "use strict";
+        return super.addStickerToSet(this.#getMethodOptions(options));
+    }
 }
