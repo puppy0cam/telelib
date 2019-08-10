@@ -16,4 +16,15 @@ export default class ResponseParameters extends Bot {
             this.retry_after = Integer(retry_after);
         }
     }
+    async waitRetryTime() {
+        "use strict";
+        const {
+            retry_after,
+        } = this;
+        if (typeof retry_after === "number") {
+            return new Promise(resolve => setTimeout(resolve, retry_after * 1000));
+        } else {
+            throw new Error("Retry after is not valid");
+        }
+    }
 }

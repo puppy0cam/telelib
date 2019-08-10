@@ -5,6 +5,11 @@ export default class ResponseParameters implements IResponseParameters {
     constructor(data: IResponseParameters | ResponseParameters, token?: string);
     public migrate_to_chat_id?: Integer;
     public retry_after?: Integer;
+    /**
+     * Will return a promise that will resolve in the object's specified retry after.
+     * If there is not retry after, it will reject the returned promise.
+     */
+    public waitRetryTime(): Promise<void>;
 }
 
 export interface IResponseParameters {
