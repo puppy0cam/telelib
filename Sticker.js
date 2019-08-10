@@ -40,11 +40,15 @@ export default class Sticker extends Bot {
             this.file_size = Integer(file_size);
         }
     }
+    #getMethodOptions = function(options) {
+        "use strict";
+        return Object.assign({
+            sticker: this.file_id,
+        }, options);
+    }
     sendSticker(options) {
         "use strict";
-        return super.sendSticker(Object.assign({
-            sticker: this.file_id,
-        }, options));
+        return super.sendSticker(this.#getMethodOptions(options));
     }
     getFile(options) {
         "use strict";
@@ -56,6 +60,26 @@ export default class Sticker extends Bot {
         "use strict";
         return super.getStickerSet(Object.assign({
             name: this.set_name,
+        }, options));
+    }
+    deleteStickerFromSet(options) {
+        "use strict";
+        return super.deleteStickerFromSet(this.#getMethodOptions(options));
+    }
+    setStickerPositionInSet(options) {
+        "use strict";
+        return super.setStickerPositionInSet(this.#getMethodOptions(options));
+    }
+    addStickerToSet(options) {
+        "use strict";
+        return super.addStickerToSet(Object.assign({
+            png_sticker: this.file_id,
+        }, options));
+    }
+    createNewStickerSet(options) {
+        "use strict";
+        return super.createNewStickerSet(Object.assign({
+            png_sticker: this.file_id,
         }, options));
     }
 }

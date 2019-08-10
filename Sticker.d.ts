@@ -8,6 +8,7 @@ import Message from "./Message";
 import PhotoSize from "./PhotoSize";
 import String from "./String";
 import StickerSet from "./StickerSet";
+import True from "./True";
 
 /** This object represents a sticker. */
 export default class Sticker implements ISticker {
@@ -40,6 +41,39 @@ export default class Sticker implements ISticker {
     public getFile(): Promise<File>;
     /** Use this method to get a sticker set. On success, a [StickerSet](https://core.telegram.org/bots/api#stickerset) object is returned. */
     public getStickerSet(): Promise<StickerSet>;
+    /** Use this method to create new sticker set owned by a user. The bot will be able to edit the created sticker set. Returns *True* on success. */
+    public createNewStickerSet(options: {
+        /** User identifier of created sticker set owner */
+        user_id: Integer;
+        /** Short name of sticker set, to be used in t.me/addstickers/ URLs (e.g., animals). Can contain only english letters, digits and underscores. Must begin with a letter, can't contain consecutive underscores and must end in *“_by_<bot username>”*. *<bot_username>* is case insensitive. 1-64 characters. */
+        name: String;
+        /** Sticker set title, 1-64 characters */
+        title: String;
+        /** One or more emoji corresponding to the sticker */
+        emojis: String;
+        /** Pass *True*, if a set of mask stickers should be created */
+        contains_masks?: Boolean;
+        /** A JSON-serialized object for position where the mask should be placed on faces */
+        mask_position?: MaskPosition;
+    }): Promise<True>;
+    /** Use this method to add a new sticker to a set created by the bot. Returns *True* on success. */
+    public addStickerToSet(options: {
+        /** User identifier of sticker set owner */
+        user_id: Integer;
+        /** Sticker set name */
+        name: String;
+        /** One or more emoji corresponding to the sticker */
+        emojis: String;
+        /** A JSON-serialized object for position where the mask should be placed on faces */
+        mask_position?: MaskPosition;
+    }): Promise<True>;
+    /** Use this method to move a sticker in a set created by the bot to a specific position . Returns *True* on success. */
+    public setStickerPositionInSet(options: {
+        /** New sticker position in the set, zero-based */
+        position: Integer;
+    }): Promise<True>;
+    /** Use this method to delete a sticker from a set created by the bot. Returns *True* on success. */
+    public deleteStickerFromSet(): Promise<True>;
 }
 
 export interface ISticker {
