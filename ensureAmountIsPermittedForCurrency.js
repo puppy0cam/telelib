@@ -1,4 +1,4 @@
-import getCurrency from "./getCurrency";
+import getCurrency from "./getCurrency.js";
 
 export default function ensureAmountIsPermittedForCurrency(amount, currency) {
     "use strict";
