@@ -1,6 +1,6 @@
-import String from "./String.js";
-import Integer from "./Integer.js";
 import Bot from "./Bot.js";
+import Integer from "./Integer.js";
+import String from "./String.js";
 
 export default class File extends Bot {
     constructor(_value, _token) {

@@ -1,6 +1,6 @@
-import String from "./String.js";
 import Array_of_String from "./Array of String.js";
 import Bot from "./Bot.js";
+import String from "./String.js";
 
 export default class PassportElementErrorTranslationFiles extends Bot {
     constructor(_value, _token) {

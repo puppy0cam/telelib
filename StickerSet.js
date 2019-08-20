@@ -1,7 +1,7 @@
-import String from "./String.js";
-import Boolean from "./Boolean.js";
 import Array_of_Sticker from "./Array of Sticker.js";
+import Boolean from "./Boolean.js";
 import Bot from "./Bot.js";
+import String from "./String.js";
 function getMethodOptions(options) {
     "use strict";
     return Object.assign({

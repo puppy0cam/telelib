@@ -1,8 +1,8 @@
-import User from "./User.js";
-import String from "./String.js";
-import Date from "./Date.js";
 import Boolean from "./Boolean.js";
 import Bot from "./Bot.js";
+import Date from "./Date.js";
+import String from "./String.js";
+import User from "./User.js";
 
 export default class ChatMember extends Bot {
     constructor(_value, _token) {

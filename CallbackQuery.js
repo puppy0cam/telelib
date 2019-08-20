@@ -1,7 +1,7 @@
+import Bot from "./Bot.js";
+import Message from "./Message.js";
 import String from "./String.js";
 import User from "./User.js";
-import Message from "./Message.js";
-import Bot from "./Bot.js";
 function getEditMessageOptions(options) {
     "use strict";
     if (this.inline_message_id) {

@@ -1,10 +1,9 @@
 import sendFormDataRequest from "./dynamicRequests/sendFormDataRequest.js";
-import defaultRequestOptions from "../defaultRequestOptions.js";
 import wait from "./dynamicRequests/wait.js";
 export default async function createNetworkRequest(token, method, options, timeout) {
     "use strict";
     const start = Date.now();
-    const result = await sendFormDataRequest(token, method, options || defaultRequestOptions, timeout);
+    const result = await sendFormDataRequest(token, method, options || {}, timeout);
     if (result.ok) {
         return result.result;
     } else if (result.parameters && result.parameters.retry_after) {

@@ -1,6 +1,6 @@
+import Bot from "./Bot.js";
 import Location from "./Location.js";
 import String from "./String.js";
-import Bot from "./Bot.js";
 
 export default class Venue extends Bot {
     constructor(_value, _token) {

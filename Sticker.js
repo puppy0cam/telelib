@@ -1,9 +1,9 @@
-import String from "./String.js";
-import Integer from "./Integer.js";
 import Boolean from "./Boolean.js";
-import PhotoSize from "./PhotoSize.js";
-import MaskPosition from "./MaskPosition.js";
 import Bot from "./Bot.js";
+import Integer from "./Integer.js";
+import MaskPosition from "./MaskPosition.js";
+import PhotoSize from "./PhotoSize.js";
+import String from "./String.js";
 function getMethodOptions(options) {
     "use strict";
     return Object.assign({

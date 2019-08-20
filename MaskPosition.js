@@ -1,6 +1,6 @@
-import String from "./String.js";
-import Float_number from "./Float number.js";
 import Bot from "./Bot.js";
+import Float_number from "./Float number.js";
+import String from "./String.js";
 
 export default class MaskPosition extends Bot {
     constructor(_value, _token) {

@@ -1,7 +1,7 @@
+import ForceReply from "./ForceReply.js";
 import InlineKeyboardMarkup from "./InlineKeyboardMarkup.js";
 import ReplyKeyboardMarkup from "./ReplyKeyboardMarkup.js";
 import ReplyKeyboardRemove from "./ReplyKeyboardRemove.js";
-import ForceReply from "./ForceReply.js";
 
 export default function InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply(value) {
     "use strict";

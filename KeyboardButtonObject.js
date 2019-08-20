@@ -1,6 +1,6 @@
-import String from "./String.js";
 import Boolean from "./Boolean.js";
 import Bot from "./Bot.js";
+import String from "./String.js";
 
 export default class KeyboardButtonObject extends Bot {
     constructor(_value, _token) {

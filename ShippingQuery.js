@@ -1,7 +1,7 @@
+import Bot from "./Bot.js";
+import ShippingAddress from "./ShippingAddress.js";
 import String from "./String.js";
 import User from "./User.js";
-import ShippingAddress from "./ShippingAddress.js";
-import Bot from "./Bot.js";
 
 export default class ShippingQuery extends Bot {
     constructor(_value, _token) {

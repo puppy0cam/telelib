@@ -1,6 +1,6 @@
+import Bot from "./Bot.js";
 import Integer from "./Integer.js";
 import User from "./User.js";
-import Bot from "./Bot.js";
 
 export default class GameHighScore extends Bot {
     constructor(_value, _token) {

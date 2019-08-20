@@ -1,6 +1,6 @@
-import True from "./True.js";
 import Boolean from "./Boolean.js";
 import Bot from "./Bot.js";
+import True from "./True.js";
 
 export default class ReplyKeyboardRemove extends Bot {
     constructor(_value, _token) {

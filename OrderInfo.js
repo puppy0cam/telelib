@@ -1,6 +1,6 @@
-import String from "./String.js";
-import ShippingAddress from "./ShippingAddress.js";
 import Bot from "./Bot.js";
+import ShippingAddress from "./ShippingAddress.js";
+import String from "./String.js";
 
 export default class OrderInfo extends Bot {
     constructor(_value, _token) {

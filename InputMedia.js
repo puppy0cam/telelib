@@ -1,6 +1,6 @@
 import InputMediaAnimation from "./InputMediaAnimation.js";
-import InputMediaDocument from "./InputMediaDocument.js";
 import InputMediaAudio from "./InputMediaAudio.js";
+import InputMediaDocument from "./InputMediaDocument.js";
 import InputMediaPhoto from "./InputMediaPhoto.js";
 import InputMediaVideo from "./InputMediaVideo.js";
 

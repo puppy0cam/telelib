@@ -1,8 +1,8 @@
-import String from "./String.js";
-import Array_of_PhotoSize from "./Array of PhotoSize.js";
-import Array_of_MessageEntity from "./Array of MessageEntity.js";
 import Animation from "./Animation.js";
+import Array_of_MessageEntity from "./Array of MessageEntity.js";
+import Array_of_PhotoSize from "./Array of PhotoSize.js";
 import Bot from "./Bot.js";
+import String from "./String.js";
 
 export default class Game extends Bot {
     constructor(_value, _token) {

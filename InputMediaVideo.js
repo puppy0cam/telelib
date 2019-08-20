@@ -1,8 +1,8 @@
-import String from "./String.js";
-import InputFile_or_String from "./InputFile or String.js";
-import Integer from "./Integer.js";
 import Boolean from "./Boolean.js";
 import Bot from "./Bot.js";
+import InputFile_or_String from "./InputFile or String.js";
+import Integer from "./Integer.js";
+import String from "./String.js";
 
 export default class InputMediaVideo extends Bot {
     constructor(_value, _token) {

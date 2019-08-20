@@ -1,7 +1,7 @@
-import String from "./String.js";
 import Array_of_PassportFile from "./Array of PassportFile.js";
-import PassportFile from "./PassportFile.js";
 import Bot from "./Bot.js";
+import PassportFile from "./PassportFile.js";
+import String from "./String.js";
 
 export default class EncryptedPassportElement extends Bot {
     constructor(_value, _token) {

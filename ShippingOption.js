@@ -1,6 +1,6 @@
-import String from "./String.js";
 import Array_of_LabeledPrice from "./Array of LabeledPrice.js";
 import Bot from "./Bot.js";
+import String from "./String.js";
 
 export default class ShippingOption extends Bot {
     constructor(_value, _token) {

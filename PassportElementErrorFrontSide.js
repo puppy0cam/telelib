@@ -1,5 +1,5 @@
-import String from "./String.js";
 import Bot from "./Bot.js";
+import String from "./String.js";
 
 export default class PassportElementErrorFrontSide extends Bot {
     constructor(_value, _token) {

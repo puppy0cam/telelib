@@ -1,6 +1,6 @@
+import Bot from "./Bot.js";
 import Float from "./Float.js";
 import String from "./String.js";
-import Bot from "./Bot.js";
 
 export default class InputVenueMessageContent extends Bot {
     constructor(_value, _token) {

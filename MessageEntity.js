@@ -1,7 +1,7 @@
-import String from "./String.js";
-import Integer from "./Integer.js";
-import User from "./User.js";
 import Bot from "./Bot.js";
+import Integer from "./Integer.js";
+import String from "./String.js";
+import User from "./User.js";
 
 export default class MessageEntity extends Bot {
     constructor(_value, _token) {

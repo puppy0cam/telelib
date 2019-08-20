@@ -1,7 +1,7 @@
+import Bot from "./Bot.js";
+import Location from "./Location.js";
 import String from "./String.js";
 import User from "./User.js";
-import Location from "./Location.js";
-import Bot from "./Bot.js";
 
 export default class ChosenInlineResult extends Bot {
     constructor(_value, _token) {

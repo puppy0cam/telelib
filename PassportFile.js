@@ -1,7 +1,7 @@
-import String from "./String.js";
-import Integer from "./Integer.js";
-import Date from "./Date.js";
 import Bot from "./Bot.js";
+import Date from "./Date.js";
+import Integer from "./Integer.js";
+import String from "./String.js";
 
 export default class PassportFile extends Bot {
     constructor(_value, _token) {

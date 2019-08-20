@@ -1,5 +1,5 @@
-import Integer from "./Integer.js";
 import Bot from "./Bot.js";
+import Integer from "./Integer.js";
 
 export default class ResponseParameters extends Bot {
     constructor(_value, _token) {

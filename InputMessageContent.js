@@ -1,7 +1,7 @@
-import InputTextMessageContent from "./InputTextMessageContent.js";
-import InputLocationMessageContent from "./InputLocationMessageContent.js";
-import InputVenueMessageContent from "./InputVenueMessageContent.js";
 import InputContactMessageContent from "./InputContactMessageContent.js";
+import InputLocationMessageContent from "./InputLocationMessageContent.js";
+import InputTextMessageContent from "./InputTextMessageContent.js";
+import InputVenueMessageContent from "./InputVenueMessageContent.js";
 
 export default function InputMessageContent(value) {
     "use strict";

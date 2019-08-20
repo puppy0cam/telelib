@@ -1,5 +1,5 @@
-import getCurrency from "./getCurrency.js";
 import ensureAmountIsPermittedForCurrency from "./ensureAmountIsPermittedForCurrency.js";
+import getCurrency from "./getCurrency.js";
 
 export default function formatAmountToCurrency(amount, currency) {
     "use strict";

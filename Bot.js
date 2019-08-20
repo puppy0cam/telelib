@@ -1,10 +1,10 @@
-import Integer from "./Integer.js";
-import String from "./String.js";
 import Boolean from "./Boolean.js";
-import Integer_or_String from "./Integer or String.js";
 import Float_number from "./Float number.js";
-
+import Integer_or_String from "./Integer or String.js";
+import Integer from "./Integer.js";
 import sendRequest from "./request/sendRequest.js";
+import String from "./String.js";
+
 export default class Bot {
     #token;
     constructor(token) {

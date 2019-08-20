@@ -1,6 +1,6 @@
-import String from "./String.js";
 import Bot from "./Bot.js";
 import PhotoSize from "./PhotoSize.js";
+import String from "./String.js";
 
 export default class ChatPhoto extends Bot {
     constructor(_value, _token) {

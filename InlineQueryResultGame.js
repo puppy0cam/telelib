@@ -1,6 +1,6 @@
-import String from "./String.js";
-import InlineKeyboardMarkup from "./InlineKeyboardMarkup.js";
 import Bot from "./Bot.js";
+import InlineKeyboardMarkup from "./InlineKeyboardMarkup.js";
+import String from "./String.js";
 
 export default class InlineQueryResultGame extends Bot {
     constructor(_value, _token) {

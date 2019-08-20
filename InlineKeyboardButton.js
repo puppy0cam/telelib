@@ -1,8 +1,8 @@
-import String from "./String.js";
-import LoginUrl from "./LoginUrl.js";
-import CallbackGame from "./CallbackGame.js";
 import Boolean from "./Boolean.js";
 import Bot from "./Bot.js";
+import CallbackGame from "./CallbackGame.js";
+import LoginUrl from "./LoginUrl.js";
+import String from "./String.js";
 
 export default class InlineKeyboardButton extends Bot {
     constructor(_value, _token) {

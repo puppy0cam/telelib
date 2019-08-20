@@ -1,6 +1,6 @@
-import Bot from "./Bot.js";
 import Animation from "./Animation.js";
 import Audio from "./Audio.js";
+import Bot from "./Bot.js";
 import CallbackGame from "./CallbackGame.js";
 import CallbackQuery from "./CallbackQuery.js";
 import Chat from "./Chat.js";
@@ -190,4 +190,4 @@ export {
     VideoNote,
     Voice,
     WebhookInfo,
-}
+};

@@ -1,5 +1,5 @@
-import Stream from "stream";
 import { Buffer } from "buffer";
+import Stream from "stream";
 export default function InputFile(value) {
     "use strict";
     if (value instanceof Stream || Buffer.isBuffer(value)) {

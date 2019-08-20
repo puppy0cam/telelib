@@ -1,9 +1,9 @@
-import String from "./String.js";
-import InputMessageContent from "./InputMessageContent.js";
-import InlineKeyboardMarkup from "./InlineKeyboardMarkup.js";
 import Boolean from "./Boolean.js";
-import Integer from "./Integer.js";
 import Bot from "./Bot.js";
+import InlineKeyboardMarkup from "./InlineKeyboardMarkup.js";
+import InputMessageContent from "./InputMessageContent.js";
+import Integer from "./Integer.js";
+import String from "./String.js";
 
 export default class InlineQueryResultArticle extends Bot {
     constructor(_value, _token) {

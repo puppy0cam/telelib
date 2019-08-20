@@ -1,7 +1,7 @@
-import String from "./String.js";
+import Bot from "./Bot.js";
 import InputFile_or_String from "./InputFile or String.js";
 import Integer from "./Integer.js";
-import Bot from "./Bot.js";
+import String from "./String.js";
 
 export default class InputMediaAnimation extends Bot {
     constructor(_value, _token) {

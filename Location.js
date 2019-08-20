@@ -1,5 +1,5 @@
-import Float from "./Float.js";
 import Bot from "./Bot.js";
+import Float from "./Float.js";
 
 export default class Location extends Bot {
     constructor(_value, _token) {

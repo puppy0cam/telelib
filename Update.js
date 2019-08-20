@@ -1,12 +1,12 @@
+import Bot from "./Bot.js";
+import CallbackQuery from "./CallbackQuery.js";
+import ChosenInlineResult from "./ChosenInlineResult.js";
+import InlineQuery from "./InlineQuery.js";
 import Integer from "./Integer.js";
 import Message from "./Message.js";
-import InlineQuery from "./InlineQuery.js";
-import ChosenInlineResult from "./ChosenInlineResult.js";
-import CallbackQuery from "./CallbackQuery.js";
-import ShippingQuery from "./ShippingQuery.js";
-import PreCheckoutQuery from "./PreCheckoutQuery.js";
 import Poll from "./Poll.js";
-import Bot from "./Bot.js";
+import PreCheckoutQuery from "./PreCheckoutQuery.js";
+import ShippingQuery from "./ShippingQuery.js";
 
 export default class Update extends Bot {
     constructor(_value, _token) {

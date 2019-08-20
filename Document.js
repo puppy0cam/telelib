@@ -1,7 +1,7 @@
-import String from "./String.js";
-import PhotoSize from "./PhotoSize.js";
-import Integer from "./Integer.js";
 import Bot from "./Bot.js";
+import Integer from "./Integer.js";
+import PhotoSize from "./PhotoSize.js";
+import String from "./String.js";
 
 export default class Document extends Bot {
     constructor(_value, _token) {

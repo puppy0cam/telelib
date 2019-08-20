@@ -1,6 +1,6 @@
-import EncryptedPassportElement from "./EncryptedPassportElement.js";
-import EncryptedCredentials from "./EncryptedCredentials.js";
 import Bot from "./Bot.js";
+import EncryptedCredentials from "./EncryptedCredentials.js";
+import EncryptedPassportElement from "./EncryptedPassportElement.js";
 
 export default class PassportData extends Bot {
     constructor(_value, _token) {

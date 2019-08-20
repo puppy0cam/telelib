@@ -1,7 +1,7 @@
-import Integer from "./Integer.js";
 import Boolean from "./Boolean.js";
-import String from "./String.js";
 import Bot from "./Bot.js";
+import Integer from "./Integer.js";
+import String from "./String.js";
 
 export default class User extends Bot {
     constructor(_value, _token) {

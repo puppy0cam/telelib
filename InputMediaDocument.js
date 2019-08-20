@@ -1,6 +1,6 @@
-import String from "./String.js";
-import InputFile_or_String from "./InputFile or String.js";
 import Bot from "./Bot.js";
+import InputFile_or_String from "./InputFile or String.js";
+import String from "./String.js";
 
 export default class InputMediaDocument extends Bot {
     constructor(_value, _token) {
