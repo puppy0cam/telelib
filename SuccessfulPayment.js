@@ -1,4 +1,5 @@
 import Bot from "./Bot.js";
+import formatAmountToCurrency from "./formatAmountToCurrency.js";
 import getCurrency from "./getCurrency.js";
 import Integer from "./Integer.js";
 import OrderInfo from "./OrderInfo.js";
@@ -32,5 +33,9 @@ export default class SuccessfulPayment extends Bot {
     getCurrency() {
         "use strict";
         return getCurrency(this.currency);
+    }
+    formatCurrency() {
+        "use strict";
+        return formatAmountToCurrency(this.total_amount, this.currency);
     }
 }
