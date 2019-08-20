@@ -1,5 +1,6 @@
 import isFile from "./isFile.js";
 import isPrimitive from "./isPrimitive.js";
+
 export default function createAggregateListOfAllFiles() {
     "use strict";
     const files = new Set();

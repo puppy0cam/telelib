@@ -1,5 +1,6 @@
 import sendFormDataRequest from "./dynamicRequests/sendFormDataRequest.js";
 import wait from "./dynamicRequests/wait.js";
+
 export default async function createNetworkRequest(token, method, options, timeout) {
     "use strict";
     const start = Date.now();

@@ -4,6 +4,7 @@ import Integer from "./Integer.js";
 import MaskPosition from "./MaskPosition.js";
 import PhotoSize from "./PhotoSize.js";
 import String from "./String.js";
+
 function getMethodOptions(options) {
     "use strict";
     return Object.assign({

@@ -4,6 +4,7 @@ import ChatPhoto from "./ChatPhoto.js";
 import Integer from "./Integer.js";
 import Message from "./Message.js";
 import String from "./String.js";
+
 function getMethodOptions(options) {
     "use strict";
     return Object.assign({

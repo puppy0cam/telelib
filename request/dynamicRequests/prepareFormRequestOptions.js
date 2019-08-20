@@ -2,6 +2,7 @@ import createAggregateListOfAllFiles from "./createAggregateListOfAllFiles.js";
 import createReplacerForAllInstancesOfValueInObjectStructure from "./createReplacerForAllInstancesOfValueInObjectStructure.js";
 import isFile from "./isFile.js";
 import isPrimitive from "./isPrimitive.js";
+
 export default function prepareFormRequestOptions(data) {
     const aggregatedFiles = new Map();
     for (const file of createAggregateListOfAllFiles()(data)) {

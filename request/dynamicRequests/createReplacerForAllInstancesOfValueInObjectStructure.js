@@ -1,4 +1,5 @@
 import isPrimitive from "./isPrimitive.js";
+
 export default function createReplacerForAllInstancesOfValueInObjectStructure(replace, replaceWith) {
     "use strict";
     const cache = new WeakMap();

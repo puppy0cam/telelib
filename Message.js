@@ -24,6 +24,7 @@ import Venue from "./Venue.js";
 import Video from "./Video.js";
 import VideoNote from "./VideoNote.js";
 import Voice from "./Voice.js";
+
 function getReplyToMessageRequestOptions(options) {
     "use strict";
     return Object.assign({
