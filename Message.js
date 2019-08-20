@@ -24,7 +24,20 @@ import SuccessfulPayment from "./SuccessfulPayment.js";
 import PassportData from "./PassportData.js";
 import InlineKeyboardMarkup from "./InlineKeyboardMarkup.js";
 import Bot from "./Bot.js";
-
+function getReplyToMessageRequestOptions(options) {
+    "use strict";
+    return Object.assign({
+        chat_id: this.chat.id,
+        reply_to_message_id: this.message_id,
+    }, options);
+}
+function getEditMessageRequestOptions(options) {
+    "use strict";
+    return Object.assign({
+        chat_id: this.chat.id,
+        message_id: this.message_id,
+    }, options);
+}
 export default class Message extends Bot {
     constructor(_value, _token) {
         "use strict";
@@ -210,20 +223,8 @@ export default class Message extends Bot {
             this.reply_markup = new InlineKeyboardMarkup(reply_markup, _token);
         }
     }
-    #getReplyToMessageRequestOptions = function(options) {
-        "use strict";
-        return Object.assign({
-            chat_id: this.chat.id,
-            reply_to_message_id: this.message_id,
-        }, options);
-    }
-    #getEditMessageRequestOptions = function(options) {
-        "use strict";
-        return Object.assign({
-            chat_id: this.chat.id,
-            message_id: this.message_id,
-        }, options);
-    }
+    #getReplyToMessageRequestOptions = getReplyToMessageRequestOptions;
+    #getEditMessageRequestOptions = getEditMessageRequestOptions;
     deleteMessage(options) {
         "use strict";
         return super.deleteMessage(this.#getEditMessageRequestOptions(options));

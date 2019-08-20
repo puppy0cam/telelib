@@ -2,7 +2,19 @@ import String from "./String.js";
 import User from "./User.js";
 import Message from "./Message.js";
 import Bot from "./Bot.js";
-
+function getEditMessageOptions(options) {
+    "use strict";
+    if (this.inline_message_id) {
+        return Object.assign({
+            inline_message_id: this.inline_message_id,
+        }, options);
+    } else {
+        return Object.assign({
+            chat_id: this.message.chat.id,
+            message_id: this.message.message_id,
+        }, options);
+    }
+}
 export default class CallbackQuery extends Bot {
     constructor(_value, _token) {
         "use strict";
@@ -32,19 +44,7 @@ export default class CallbackQuery extends Bot {
             this.game_short_name = String(game_short_name);
         }
     }
-    #getEditMessageOptions = function(options) {
-        "use strict";
-        if (this.inline_message_id) {
-            return Object.assign({
-                inline_message_id: this.inline_message_id,
-            }, options);
-        } else {
-            return Object.assign({
-                chat_id: this.message.chat.id,
-                message_id: this.message.message_id,
-            }, options);
-        }
-    }
+    #getEditMessageOptions = getEditMessageOptions;
     answerCallbackQuery(options) {
         "use strict";
         return super.answerCallbackQuery(Object.assign({

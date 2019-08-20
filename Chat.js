@@ -4,7 +4,12 @@ import ChatPhoto from "./ChatPhoto.js";
 import Message from "./Message.js";
 import Boolean from "./Boolean.js";
 import Bot from "./Bot.js";
-
+function getMethodOptions(options) {
+    "use strict";
+    return Object.assign({
+        chat_id: this.id,
+    }, options);
+}
 export default class Chat extends Bot {
     constructor(_value, _token) {
         "use strict";
@@ -56,12 +61,7 @@ export default class Chat extends Bot {
             this.can_set_sticker_set = Boolean(can_set_sticker_set);
         }
     }
-    #getMethodOptions = function(options) {
-        "use strict";
-        return Object.assign({
-            chat_id: this.id,
-        }, options);
-    }
+    #getMethodOptions = getMethodOptions;
     forwardMessage(options) {
         "use strict";
         return super.forwardMessage(Object.assign({

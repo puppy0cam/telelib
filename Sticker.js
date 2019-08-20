@@ -4,7 +4,12 @@ import Boolean from "./Boolean.js";
 import PhotoSize from "./PhotoSize.js";
 import MaskPosition from "./MaskPosition.js";
 import Bot from "./Bot.js";
-
+function getMethodOptions(options) {
+    "use strict";
+    return Object.assign({
+        sticker: this.file_id,
+    }, options);
+}
 export default class Sticker extends Bot {
     constructor(_value, _token) {
         "use strict";
@@ -40,12 +45,7 @@ export default class Sticker extends Bot {
             this.file_size = Integer(file_size);
         }
     }
-    #getMethodOptions = function(options) {
-        "use strict";
-        return Object.assign({
-            sticker: this.file_id,
-        }, options);
-    }
+    #getMethodOptions = getMethodOptions;
     sendSticker(options) {
         "use strict";
         return super.sendSticker(this.#getMethodOptions(options));

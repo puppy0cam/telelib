@@ -2,7 +2,12 @@ import String from "./String.js";
 import Boolean from "./Boolean.js";
 import Array_of_Sticker from "./Array of Sticker.js";
 import Bot from "./Bot.js";
-
+function getMethodOptions(options) {
+    "use strict";
+    return Object.assign({
+        name: this.name,
+    }, options);
+}
 export default class StickerSet extends Bot {
     constructor(_value, _token) {
         "use strict";
@@ -20,12 +25,7 @@ export default class StickerSet extends Bot {
         this.contains_masks = Boolean(contains_masks);
         this.stickers = Array_of_Sticker(stickers, _token);
     }
-    #getMethodOptions = function(options) {
-        "use strict";
-        return Object.assign({
-            name: this.name,
-        }, options);
-    }
+    #getMethodOptions = getMethodOptions;
     getStickerSet(options) {
         "use strict";
         return super.getStickerSet(this.#getMethodOptions(options));
