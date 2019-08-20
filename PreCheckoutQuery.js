@@ -1,8 +1,9 @@
-import String from "./String.js";
-import User from "./User.js";
+import Bot from "./Bot.js";
+import getCurrency from "./getCurrency.js";
 import Integer from "./Integer.js";
 import OrderInfo from "./OrderInfo.js";
-import Bot from "./Bot.js";
+import String from "./String.js";
+import User from "./User.js";
 
 export default class PreCheckoutQuery extends Bot {
     constructor(_value, _token) {
@@ -35,5 +36,9 @@ export default class PreCheckoutQuery extends Bot {
             pre_checkout_query: this.id,
             ok: true
         }, options));
+    }
+    getCurrency() {
+        "use strict";
+        return getCurrency(this.currency);
     }
 }
