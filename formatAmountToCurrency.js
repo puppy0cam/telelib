@@ -58,5 +58,3 @@ function formatCurrency(currencyData, value) {
     const [UPPER_BOUND, LOWER_BOUND] = getDecimalValues(currencyData, value);
     return prefixCurrencySymbol(currencyData) + formatUpperBound(currencyData, UPPER_BOUND) + formatLowerBound(currencyData, LOWER_BOUND) + suffixCurrencySymbol(currencyData);
 }
-
-formatAmountToCurrency(1312437,"AUD");
