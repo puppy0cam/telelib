@@ -1,7 +1,8 @@
-import String from "./String.js";
+import Bot from "./Bot.js";
+import getCurrency from "./getCurrency.js";
 import Integer from "./Integer.js";
 import OrderInfo from "./OrderInfo.js";
-import Bot from "./Bot.js";
+import String from "./String.js";
 
 export default class SuccessfulPayment extends Bot {
     constructor(_value, _token) {
@@ -27,5 +28,9 @@ export default class SuccessfulPayment extends Bot {
         }
         this.telegram_payment_charge_id = String(telegram_payment_charge_id);
         this.provider_payment_charge_id = String(provider_payment_charge_id);
+    }
+    getCurrency() {
+        "use strict";
+        return getCurrency(this.currency);
     }
 }
