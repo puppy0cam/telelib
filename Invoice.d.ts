@@ -9,6 +9,14 @@ export default class Invoice implements IInvoice {
     public start_parameter: String;
     public currency: String;
     public total_amount: Integer;
+    /**
+     * Will get basic information about the currency used.
+     */
+    public getCurrency(): CurrencyData;
+    /**
+     * Will create text of the total_amount formatted for the currency used
+     */
+    public formatCurrency(): string;
 }
 
 export interface IInvoice {

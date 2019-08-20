@@ -21,6 +21,14 @@ export default class PreCheckoutQuery implements IPreCheckoutQuery {
         /** Required if ok is False. Error message in human readable form that explains the reason for failure to proceed with the checkout (e.g. "Sorry, somebody just bought the last of our amazing black T-shirts while you were busy filling out your payment details. Please choose a different color or garment!"). Telegram will display this message to the user. */
         error_message: String;
     }): Promise<True>;
+    /**
+     * Will get basic information about the currency used.
+     */
+    public getCurrency(): CurrencyData;
+    /**
+     * Will create text of the total_amount formatted for the currency used
+     */
+    public formatCurrency(): string;
 }
 
 export interface IPreCheckoutQuery {
