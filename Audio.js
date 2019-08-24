@@ -40,10 +40,10 @@ export default class Audio extends Bot {
             file_id: this.file_id,
         }, options));
     }
-    getFile() {
+    getFile(options) {
         "use strict";
-        return super.getFile({
-            file_id: this.file_id,
-        });
+        return super.getFile(Object.assign({
+            file_id: this.file_id
+        }, options));
     }
 }

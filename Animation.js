@@ -34,11 +34,11 @@ export default class Animation extends Bot {
             this.file_size = Integer(file_size);
         }
     }
-    getFile() {
+    getFile(options) {
         "use strict";
-        return super.getFile({
-            file_id: this.file_id,
-        });
+        return super.getFile(Object.assign({
+            file_id: this.file_id
+        }, options));
     }
     sendAnimation(options) {
         "use strict";
