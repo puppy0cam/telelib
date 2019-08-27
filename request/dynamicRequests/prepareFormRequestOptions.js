@@ -6,7 +6,7 @@ import isPrimitive from "./isPrimitive.js";
 export default function prepareFormRequestOptions(data) {
     "use strict";
     const aggregatedFiles = new Map();
-    for (const file of createAggregateListOfAllFiles()(data)) {
+    for (const file of createAggregateListOfAllFiles(data)) {
         aggregatedFiles.set(file, `file_${aggregatedFiles.size}`);
         for (const i in data) {
             if (data[i] === file) {
