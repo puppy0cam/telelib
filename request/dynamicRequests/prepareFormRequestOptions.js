@@ -16,7 +16,7 @@ export default function prepareFormRequestOptions(data) {
     }
     let result = data;
     for (const [file, filename] of aggregatedFiles) {
-        result = createReplacerForAllInstancesOfValueInObjectStructure(file, `attach://${filename}`)(result);
+        result = createReplacerForAllInstancesOfValueInObjectStructure(file, `attach://${filename}`, result);
         result[filename] = file;
     }
     for (const key of Object.keys(result)) {
