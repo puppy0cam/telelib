@@ -32,11 +32,12 @@ export default class Bot {
                 allowed_updates,
                 offset: highest_known_update_id ? highest_known_update_id + 1 : null,
             });
-            for (const update of current_update_set) {
-                yield update;
+            for (let i = 0; i < current_update_set.length; i++) {
+                yield current_update_set[i];
             }
             current_update_set = await new_update_set;
-            for (const update of current_update_set) {
+            for (let i = 0; i < current_update_set.length; i++) {
+                const update = current_update_set[i];
                 if (update.update_id > highest_known_update_id) {
                     highest_known_update_id = update.update_id;
                 }

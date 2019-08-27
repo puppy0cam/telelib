@@ -12,7 +12,9 @@ export default function createAggregateListOfAllFiles() {
         } else if (isFile(data)) {
             files.add(data);
         } else if (Array.isArray(data)) {
-            data.forEach(aggregateListOfAllFiles);
+        for (let i = 0; i < data.length; i++) {
+            aggregateListOfAllFiles(files, cache, data[i]);
+        }
         } else if (!isPrimitive(data)) {
             for (const key in data) {
                 aggregateListOfAllFiles(data[key]);

@@ -13,8 +13,9 @@ export default function createReplacerForAllInstancesOfValueInObjectStructure(re
             } else if (Array.isArray(data)) {
                 const value = [];
                 cache.set(data, value);
-                for (const instance of data) {
-                    const val = replaceAllInstancesOfValueInObjectStructure(instance);
+            for (let i = 0; i < data.length; i++) {
+                const instance = data[i];
+                const val = replaceAllInstancesOfValueInObjectStructure(cache, replace, replaceWith, instance);
                     if (val != null) {
                         value.push(val);
                     }

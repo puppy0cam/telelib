@@ -29,8 +29,9 @@ function formatUpperBound(currencyData, UPPER_BOUND) {
     "use strict";
     const placements = [];
     let CURRENT_PLACEMENT = "";
-    for (const entry of UPPER_BOUND.toString().split(/(?<=\d)/).reverse()) {
-        CURRENT_PLACEMENT += entry;
+    const ENTRY_DATA = UPPER_BOUND.toString().split(/(?<=\d)/).reverse();
+    for (let i = 0; i < ENTRY_DATA.length; i++) {
+        CURRENT_PLACEMENT += ENTRY_DATA[i];
         if (CURRENT_PLACEMENT.length >= 3) {
             placements.push(CURRENT_PLACEMENT);
             CURRENT_PLACEMENT = "";
