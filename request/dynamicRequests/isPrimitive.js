@@ -1,4 +1,5 @@
 export default function isPrimitive(value) {
+    "use strict";
     switch (typeof value) {
         case "object":
             return value === null;

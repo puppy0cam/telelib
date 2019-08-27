@@ -20,6 +20,7 @@ import InlineQueryResultVideo from "./InlineQueryResultVideo.js";
 import InlineQueryResultVoice from "./InlineQueryResultVoice.js";
 
 export default function InlineQueryResult(value) {
+    "use strict";
     const type = value.type;
     if (type === "audio") {
         if (value.audio_file_id) {
