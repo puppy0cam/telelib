@@ -1,40 +1,33 @@
-import Boolean from "./Boolean";
-import InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply from "./InlineKeyboardMarkup or ReplyKeyboardMarkup or ReplyKeyboardRemove or ForceReply";
-import Integer from "./Integer";
-import Integer_or_String from "./Integer or String";
-import Message from "./Message";
-import String from "./String";
-
+import { Bot, IForceReply, IInlineKeyboardMarkup, IReplyKeyboardMarkup, IReplyKeyboardRemove, Message } from "./_internals.js";
 /** This object represents a phone contact. */
-export default class Contact implements IContact {
-    constructor(data: IContact | Contact, token?: string);
-    public phone_number: String;
-    public first_name: String;
-    public last_name?: String;
-    public user_id?: Integer;
-    public vcard?: String;
-    /** Use this method to send phone contacts. On success, the sent [Message](https://core.telegram.org/bots/api#message) is returned. */
-    public sendContact(options: {
+export declare class Contact extends Bot implements IContact {
+    constructor(data: IContact, token?: string | Bot);
+    phone_number: string;
+    first_name: string;
+    last_name?: string;
+    user_id?: number;
+    vcard?: string;
+    sendContact(options: {
         /** Unique identifier for the target chat or username of the target channel (in the format `@channelusername`) */
-        chat_id: Integer_or_String;
+        chat_id: number | string;
         /** Sends the message [silently](https://telegram.org/blog/channels-2-0#silent-messages). Users will receive a notification with no sound. */
-        disable_notification?: Boolean;
+        disable_notification?: boolean;
         /** If the message is a reply, ID of the original message */
-        reply_to_message_id?: Integer;
+        reply_to_message_id?: number;
         /** Additional interface options. A JSON-serialized object for an [inline keyboard](https://core.telegram.org/bots#inline-keyboards-and-on-the-fly-updating), [custom reply keyboard](https://core.telegram.org/bots#keyboards), instructions to remove keyboard or to force a reply from the user. */
-        reply_markup?: InlineKeyboardMarkup_or_ReplyKeyboardMarkup_or_ReplyKeyboardRemove_or_ForceReply;
-    }): Promise<Message>;
+        reply_markup?: IInlineKeyboardMarkup | IReplyKeyboardMarkup | IReplyKeyboardRemove | IForceReply;
+    }, timeout?: number): Promise<Message>;
 }
-
+/** This object represents a phone contact. */
 export interface IContact {
     /** Contact's phone number */
-    phone_number: String;
+    phone_number: string;
     /** Contact's first name */
-    first_name: String;
+    first_name: string;
     /** Contact's last name */
-    last_name?: String;
+    last_name?: string;
     /** Contact's user identifier in Telegram */
-    user_id?: Integer;
+    user_id?: number;
     /** Additional data about the contact in the form of a [vCard](https://en.wikipedia.org/wiki/VCard) */
-    vcard?: String;
+    vcard?: string;
 }

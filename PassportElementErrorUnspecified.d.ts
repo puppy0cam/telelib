@@ -1,21 +1,20 @@
-import String from "./String";
-
+import { Bot, IPassportElementError, PassportElementError } from "./_internals.js";
 /** Represents an issue in an unspecified place. The error is considered resolved when new data is added. */
-export default class PassportElementErrorUnspecified implements IPassportElementErrorUnspecified {
-    constructor(data: IPassportElementErrorUnspecified | PassportElementErrorUnspecified, token?: string);
-    public source: String;
-    public type: String;
-    public element_hash: String;
-    public message: String;
+export declare class PassportElementErrorUnspecified extends PassportElementError implements IPassportElementErrorUnspecified {
+    constructor(data: IPassportElementErrorUnspecified, token?: string | Bot);
+    source: "unspecified";
+    type: string;
+    element_hash: string;
+    message: string;
 }
-
-export interface IPassportElementErrorUnspecified {
+/** Represents an issue in an unspecified place. The error is considered resolved when new data is added. */
+export interface IPassportElementErrorUnspecified extends IPassportElementError {
     /** Error source, must be *unspecified* */
-    source: String;
+    source: "unspecified";
     /** Type of element of the user's Telegram Passport which has the issue */
-    type: String;
+    type: string;
     /** Base64-encoded element hash */
-    element_hash: String;
+    element_hash: string;
     /** Error message */
-    message: String;
+    message: string;
 }

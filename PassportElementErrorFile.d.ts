@@ -1,21 +1,20 @@
-import String from "./String";
-
+import { Bot, IPassportElementError, PassportElementError } from "./_internals.js";
 /** Represents an issue with a document scan. The error is considered resolved when the file with the document scan changes. */
-export default class PassportElementErrorFile implements IPassportElementErrorFile {
-    constructor(data: IPassportElementErrorFile | PassportElementErrorFile, token?: string);
-    public source: String;
-    public type: String;
-    public file_hash: String;
-    public message: String;
+export declare class PassportElementErrorFile extends PassportElementError implements IPassportElementErrorFile {
+    constructor(data: IPassportElementErrorFile, token?: string | Bot);
+    source: "file";
+    type: "utility_bill" | "bank_statement" | "rental_agreement" | "passport_registration" | "temporary_registration";
+    file_hash: string;
+    message: string;
 }
-
-export interface IPassportElementErrorFile {
+/** Represents an issue with a document scan. The error is considered resolved when the file with the document scan changes. */
+export interface IPassportElementErrorFile extends IPassportElementError {
     /** Error source, must be file */
-    source: String;
+    source: "file";
     /** The section of the user's Telegram Passport which has the issue, one of “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration” */
-    type: String;
+    type: "utility_bill" | "bank_statement" | "rental_agreement" | "passport_registration" | "temporary_registration";
     /** Base64-encoded file hash */
-    file_hash: String;
+    file_hash: string;
     /** Error message */
-    message: String;
+    message: string;
 }

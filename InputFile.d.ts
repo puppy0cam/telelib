@@ -1,5 +1,5 @@
-import Stream from "stream";
-import { Buffer } from "buffer";
-declare type InputFile = Stream | Buffer;
-declare function InputFile(data: InputFile): InputFile;
-export default InputFile;
+/// <reference types="node" />
+import { Stream } from "stream";
+import { ReadStream } from "fs";
+export declare type InputFile = Stream | Buffer | ReadStream;
+export {};

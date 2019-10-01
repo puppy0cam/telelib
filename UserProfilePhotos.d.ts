@@ -1,16 +1,14 @@
-import Integer from "./Integer";
-import Array_of_Array_of_PhotoSize from "./Array of Array of PhotoSize";
-
+import { Bot, IPhotoSize, PhotoSize } from "./_internals.js";
 /** This object represent a user's profile pictures. */
-export default class UserProfilePhotos implements IUserProfilePhotos {
-    constructor(data: IUserProfilePhotos | UserProfilePhotos, token?: string);
-    public total_count: Integer;
-    public photos: Array_of_Array_of_PhotoSize;
+export declare class UserProfilePhotos extends Bot implements IUserProfilePhotos {
+    constructor(data: IUserProfilePhotos, token?: string | Bot);
+    total_count: number;
+    photos: PhotoSize[][];
 }
-
+/** This object represent a user's profile pictures. */
 export interface IUserProfilePhotos {
     /** Total number of profile pictures the target user has */
-    total_count: Integer;
+    total_count: number;
     /** Requested profile pictures (in up to 4 sizes each) */
-    photos: Array_of_Array_of_PhotoSize;
+    photos: IPhotoSize[][];
 }

@@ -1,22 +1,20 @@
-import String from "./String";
-import ShippingAddress from "./ShippingAddress";
-
+import { Bot, ShippingAddress, IShippingAddress } from "./_internals.js";
 /** This object represents information about an order. */
-export default class OrderInfo implements IOrderInfo {
-    constructor(data: IOrderInfo | OrderInfo, token?: string);
-    public name?: String;
-    public phone_number?: String;
-    public email?: String;
-    public shipping_address?: ShippingAddress;
+export declare class OrderInfo extends Bot implements IOrderInfo {
+    constructor(data: IOrderInfo, token?: string | Bot);
+    name?: string;
+    phone_number?: string;
+    email?: string;
+    shipping_address?: ShippingAddress;
 }
-
+/** This object represents information about an order. */
 export interface IOrderInfo {
     /** User name */
-    name?: String;
+    name?: string;
     /** User's phone number */
-    phone_number?: String;
+    phone_number?: string;
     /** User email */
-    email?: String;
+    email?: string;
     /** User shipping address */
-    shipping_address?: ShippingAddress;
+    shipping_address?: IShippingAddress;
 }

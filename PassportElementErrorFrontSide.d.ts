@@ -1,21 +1,20 @@
-import String from "./String";
-
+import { Bot, IPassportElementError, PassportElementError } from "./_internals.js";
 /** Represents an issue with the front side of a document. The error is considered resolved when the file with the front side of the document changes. */
-export default class PassportElementErrorFrontSide implements IPassportElementErrorFrontSide {
-    constructor(data: IPassportElementErrorFrontSide | PassportElementErrorFrontSide, token?: string);
-    public source: String;
-    public type: String;
-    public file_hash: String;
-    public message: String;
+export declare class PassportElementErrorFrontSide extends PassportElementError implements IPassportElementErrorFrontSide {
+    constructor(data: IPassportElementErrorFrontSide, token?: string | Bot);
+    source: "front_side";
+    type: "passport" | "driver_license" | "identity_card" | "internal_passport";
+    file_hash: string;
+    message: string;
 }
-
-export interface IPassportElementErrorFrontSide {
+/** Represents an issue with the front side of a document. The error is considered resolved when the file with the front side of the document changes. */
+export interface IPassportElementErrorFrontSide extends IPassportElementError {
     /** Error source, must be *front_side* */
-    source: String;
+    source: "front_side";
     /** The section of the user's Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport” */
-    type: String;
+    type: "passport" | "driver_license" | "identity_card" | "internal_passport";
     /** Base64-encoded hash of the file with the front side of the document */
-    file_hash: String;
+    file_hash: string;
     /** Error message */
-    message: String;
+    message: string;
 }

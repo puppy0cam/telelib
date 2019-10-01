@@ -1,19 +1,17 @@
-import Integer from "./Integer";
-import User from "./User";
-
+import { Bot, User, IUser } from "./_internals.js";
 /** This object represents one row of the high scores table for a game. */
-export default class GameHighScore implements IGameHighScore {
-    constructor(data: IGameHighScore | GameHighScore, token?: string);
-    public position: Integer;
-    public user: User;
-    public score: Integer;
+export declare class GameHighScore extends Bot implements IGameHighScore {
+    constructor(data: IGameHighScore, token?: string | Bot);
+    position: number;
+    user: User;
+    score: number;
 }
-
+/** This object represents one row of the high scores table for a game. */
 export interface IGameHighScore {
     /** Position in high score table for the game */
-    position: Integer;
+    position: number;
     /** User */
-    user: User;
+    user: IUser;
     /** Score */
-    score: Integer;
+    score: number;
 }

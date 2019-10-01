@@ -1,24 +1,23 @@
-import String from "./String";
-
+import { Bot, IPassportElementError, PassportElementError } from "./_internals.js";
 /** Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field's value changes. */
-export default class PassportElementErrorDataField implements IPassportElementErrorDataField {
-    constructor(data: IPassportElementErrorDataField | PassportElementErrorDataField, token?: string);
-    public source: String;
-    public type: String;
-    public field_name: String;
-    public data_hash: String;
-    public message: String;
+export declare class PassportElementErrorDataField extends PassportElementError implements IPassportElementErrorDataField {
+    constructor(data: IPassportElementErrorDataField, token?: string | Bot);
+    source: "data";
+    type: "personal_details" | "passport" | "driver_license" | "identity_card" | "internal_passport" | "address";
+    field_name: string;
+    data_hash: string;
+    message: string;
 }
-
-export interface IPassportElementErrorDataField {
+/** Represents an issue in one of the data fields that was provided by the user. The error is considered resolved when the field's value changes. */
+export interface IPassportElementErrorDataField extends IPassportElementError {
     /** Error source, must be *data* */
-    source: String;
+    source: "data";
     /** The section of the user's Telegram Passport which has the error, one of “personal_details”, “passport”, “driver_license”, “identity_card”, “internal_passport”, “address” */
-    type: String;
+    type: "personal_details" | "passport" | "driver_license" | "identity_card" | "internal_passport" | "address";
     /** Name of the data field which has the error */
-    field_name: String;
+    field_name: string;
     /** Base64-encoded data hash */
-    data_hash: String;
+    data_hash: string;
     /** Error message */
-    message: String;
+    message: string;
 }

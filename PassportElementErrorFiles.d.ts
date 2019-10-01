@@ -1,22 +1,20 @@
-import String from "./String";
-import Array_of_String from "./Array of String";
-
+import { Bot, IPassportElementError, PassportElementError } from "./_internals.js";
 /** Represents an issue with a list of scans. The error is considered resolved when the list of files containing the scans changes. */
-export default class PassportElementErrorFiles implements IPassportElementErrorFiles {
-    constructor(data: IPassportElementErrorFiles | PassportElementErrorFiles, token?: string);
-    public source: String;
-    public type: String;
-    public file_hashes: Array_of_String;
-    public message: String;
+export declare class PassportElementErrorFiles extends PassportElementError implements IPassportElementErrorFiles {
+    constructor(data: IPassportElementErrorFiles, token?: string | Bot);
+    source: "files";
+    type: "utility_bill" | "bank_statement" | "rental_agreement" | "passport_registration" | "temporary_registration";
+    file_hashes: string[];
+    message: string;
 }
-
-export interface IPassportElementErrorFiles {
+/** Represents an issue with a list of scans. The error is considered resolved when the list of files containing the scans changes. */
+export interface IPassportElementErrorFiles extends IPassportElementError {
     /** Error source, must be *files* */
-    source: String;
+    source: "files";
     /** The section of the user's Telegram Passport which has the issue, one of “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration” */
-    type: String;
+    type: "utility_bill" | "bank_statement" | "rental_agreement" | "passport_registration" | "temporary_registration";
     /** List of base64-encoded file hashes */
-    file_hashes: Array_of_String;
+    file_hashes: string[];
     /** Error message */
-    message: String;
+    message: string;
 }

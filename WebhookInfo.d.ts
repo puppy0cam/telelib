@@ -1,34 +1,29 @@
-import String from "./String";
-import Boolean from "./Boolean";
-import Integer from "./Integer";
-import Date from "./Date";
-import Array_of_String from "./Array of String";
-
+import { Bot } from "./_internals.js";
 /** Contains information about the current status of a webhook. */
-export default class WebhookInfo implements IWebhookInfo {
-    constructor(data: IWebhookInfo | WebhookInfo, token?: string);
-    public url: String;
-    public has_custom_certificate: Boolean;
-    public pending_update_count: Integer;
-    public last_error_date?: Date;
-    public last_error_message?: String;
-    public max_connection?: Integer;
-    public allowed_updates?: Array_of_String;
+export declare class WebhookInfo extends Bot implements IWebhookInfo {
+    constructor(data: IWebhookInfo, token?: string | Bot);
+    url: string;
+    has_custom_certificate: boolean;
+    pending_update_count: number;
+    last_error_date?: Date;
+    last_error_message?: string;
+    max_connection?: number;
+    allowed_updates?: string[];
 }
-
+/** Contains information about the current status of a webhook. */
 export interface IWebhookInfo {
     /** Webhook URL, may be empty if webhook is not set up */
-    url: String;
+    url: string;
     /** True, if a custom certificate was provided for webhook certificate checks */
-    has_custom_certificate: Boolean;
+    has_custom_certificate: boolean;
     /** Number of updates awaiting delivery */
-    pending_update_count: Integer;
+    pending_update_count: number;
     /** Unix time for the most recent error that happened when trying to deliver an update via webhook */
-    last_error_date?: Date;
+    last_error_date?: Date | number;
     /** Error message in human-readable format for the most recent error that happened when trying to deliver an update via webhook */
-    last_error_message?: String;
+    last_error_message?: string;
     /** Maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery */
-    max_connection?: Integer;
+    max_connection?: number;
     /** A list of update types the bot is subscribed to. Defaults to all update types */
-    allowed_updates?: Array_of_String;
+    allowed_updates?: string[];
 }

@@ -1,30 +1,26 @@
-import String from "./String";
-import Array_of_PhotoSize from "./Array of PhotoSize";
-import Array_of_MessageEntity from "./Array of MessageEntity";
-import Animation from "./Animation";
-
+import { Bot, Animation, IAnimation, MessageEntity, IMessageEntity, PhotoSize, IPhotoSize } from "./_internals.js";
 /** This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers. */
-export default class Game implements IGame {
-    constructor(data: IGame | Game, token?: string);
-    public title: String;
-    public description: String;
-    public photo: Array_of_PhotoSize;
-    public text?: String;
-    public text_entities?: Array_of_MessageEntity;
-    public animation?: Animation;
+export declare class Game extends Bot implements IGame {
+    constructor(data: IGame, token?: string | Bot);
+    title: string;
+    description: string;
+    photo: PhotoSize[];
+    text?: string;
+    text_entities?: MessageEntity[];
+    animation?: Animation;
 }
-
+/** This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers. */
 export interface IGame {
     /** Title of the game */
-    title: String;
+    title: string;
     /** Description of the game */
-    description: String;
+    description: string;
     /** Photo that will be displayed in the game message in chats. */
-    photo: Array_of_PhotoSize;
+    photo: IPhotoSize[];
     /** Brief description of the game or high scores included in the game message. Can be automatically edited to include current high scores for the game when the bot calls [setGameScore](https://core.telegram.org/bots/api#setgamescore), or manually edited using [editMessageText](https://core.telegram.org/bots/api#editmessagetext). 0-4096 characters. */
-    text?: String;
+    text?: string;
     /** Special entities that appear in *text*, such as usernames, URLs, bot commands, etc. */
-    text_entities?: Array_of_MessageEntity;
+    text_entities?: IMessageEntity[];
     /** Animation that will be displayed in the game message in chats. Upload via [BotFather](https://t.me/botfather) */
-    animation?: Animation;
+    animation?: IAnimation;
 }

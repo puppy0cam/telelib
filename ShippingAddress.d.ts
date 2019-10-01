@@ -1,27 +1,26 @@
-import String from "./String";
-
+import { Bot } from "./_internals.js";
 /** This object represents a shipping address. */
-export default class ShippingAddress implements IShippingAddress {
-    constructor(data: IShippingAddress | ShippingAddress, token?: string);
-    public country_code: String;
-    public state: String;
-    public city: String;
-    public street_line1: String;
-    public street_line2: String;
-    public post_code: String;
+export declare class ShippingAddress extends Bot implements IShippingAddress {
+    constructor(data: IShippingAddress, token?: string | Bot);
+    country_code: string;
+    state: string;
+    city: string;
+    street_line1: string;
+    street_line2: string;
+    post_code: string;
 }
-
+/** This object represents a shipping address. */
 export interface IShippingAddress {
     /** ISO 3166-1 alpha-2 country code */
-    country_code: String;
+    country_code: string;
     /** State, if applicable */
-    state: String;
+    state: string;
     /** City */
-    city: String;
+    city: string;
     /** First line for the address */
-    street_line1: String;
+    street_line1: string;
     /** Second line for the address */
-    street_line2: String;
+    street_line2: string;
     /** Address post code */
-    post_code: String;
+    post_code: string;
 }

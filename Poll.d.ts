@@ -1,23 +1,21 @@
-import String from "./String";
-import Array_of_PollOption from "./Array of PollOption";
-import Boolean from "./Boolean";
-
+import { Bot, PollOption, IPollOption } from "./_internals.js";
 /** This object contains information about a poll. */
-export default class Poll implements IPoll {
-    constructor(data: IPoll | Poll, token?: string);
-    public id: String;
-    public question: String;
-    public options: Array_of_PollOption;
-    public is_closed: Boolean;
+export declare class Poll extends Bot implements IPoll {
+    constructor(data: IPoll, token?: string | Bot);
+    id: string;
+    question: string;
+    options: PollOption[];
+    is_closed: boolean;
+    getTotalVoteCount(): number;
 }
-
+/** This object contains information about a poll. */
 export interface IPoll {
     /** Unique poll identifier */
-    id: String;
+    id: string;
     /** Poll question, 1-255 characters */
-    question: String;
+    question: string;
     /** List of poll options */
-    options: Array_of_PollOption;
+    options: IPollOption[];
     /** True, if the poll is closed */
-    is_closed: Boolean;
+    is_closed: boolean;
 }

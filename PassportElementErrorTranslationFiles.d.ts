@@ -1,22 +1,20 @@
-import String from "./String";
-import Array_of_String from "./Array of String";
-
+import { Bot, IPassportElementError, PassportElementError } from "./_internals.js";
 /** Represents an issue with the translated version of a document. The error is considered resolved when a file with the document translation change. */
-export default class PassportElementErrorTranslationFiles implements IPassportElementErrorTranslationFiles {
-    constructor(data: IPassportElementErrorTranslationFiles | PassportElementErrorTranslationFiles, token?: string);
-    public source: String;
-    public type: String;
-    public file_hashes: Array_of_String;
-    public message: String;
+export declare class PassportElementErrorTranslationFiles extends PassportElementError implements IPassportElementErrorTranslationFiles {
+    constructor(data: IPassportElementErrorTranslationFiles, token?: string | Bot);
+    source: "translation_files";
+    type: "passport" | "driver_license" | "identity_card" | "internal_passport" | "utility_bill" | "bank_statement" | "rental_agreement" | "passport_registration" | "temporary_registration";
+    file_hashes: string[];
+    message: string;
 }
-
-export interface IPassportElementErrorTranslationFiles {
+/** Represents an issue with the translated version of a document. The error is considered resolved when a file with the document translation change. */
+export interface IPassportElementErrorTranslationFiles extends IPassportElementError {
     /** Error source, must be *translation_files* */
-    source: String;
+    source: "translation_files";
     /** Type of element of the user's Telegram Passport which has the issue, one of “passport”, “driver_license”, “identity_card”, “internal_passport”, “utility_bill”, “bank_statement”, “rental_agreement”, “passport_registration”, “temporary_registration” */
-    type: String;
+    type: "passport" | "driver_license" | "identity_card" | "internal_passport" | "utility_bill" | "bank_statement" | "rental_agreement" | "passport_registration" | "temporary_registration";
     /** List of base64-encoded file hashes */
-    file_hashes: Array_of_String;
+    file_hashes: string[];
     /** Error message */
-    message: String;
+    message: string;
 }

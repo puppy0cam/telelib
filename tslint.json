@@ -1,0 +1,16 @@
+{
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "max-line-length": false,
+        "member-access": false,
+        "semicolon": false,
+        "no-unused-expression": false,
+        "prefer-for-of": false,
+        "variable-name": false,
+        "switch-default": false
+    },
+    "rulesDirectory": []
+}
