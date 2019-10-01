@@ -1,6 +1,6 @@
 {
   "name": "telelib",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An interface for the Telegram Bot API",
   "main": "index.mjs",
   "scripts": {
