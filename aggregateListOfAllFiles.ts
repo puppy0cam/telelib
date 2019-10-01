@@ -14,7 +14,7 @@ export const aggregateListOfAllFiles = (files: any, cache: any, data: any) => {
         const DATA_KEYS = Object.keys(data);
         for (let i = 0; i < DATA_KEYS.length; i++) {
             const key = DATA_KEYS[i];
-            aggregateListOfAllFiles(data[key], cache, data);
+            aggregateListOfAllFiles(files, cache, data[key]);
         }
     } else {
         return files;

@@ -6,6 +6,9 @@ exports.aggregateListOfAllFiles = (files, cache, data) => {
     if (cache.has(data)) {
         return files;
     }
+    else if (data == null) {
+        return null;
+    }
     else if (_internals_js_1.isFile(data)) {
         files.add(data);
     }
@@ -18,7 +21,7 @@ exports.aggregateListOfAllFiles = (files, cache, data) => {
         const DATA_KEYS = Object.keys(data);
         for (let i = 0; i < DATA_KEYS.length; i++) {
             const key = DATA_KEYS[i];
-            exports.aggregateListOfAllFiles(data[key], cache, data);
+            exports.aggregateListOfAllFiles(files, cache, data[key]);
         }
     }
     else {
