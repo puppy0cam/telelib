@@ -27,6 +27,9 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   },
+  "devDependencies": {
+    "typescript": "https://typescript.visualstudio.com/cf7ac146-d525-443c-b23c-0d58337efebc/_apis/build/builds/44999/artifacts?artifactName=tgz&fileId=5313107444626561A1FCDF215A1EE00D140CE70782EA7B9539F857DC6F073FCF02&fileName=/typescript-3.7.0-insiders.20190922.tgz"
+  },
   "exports": {
     "./esm": "./index.mjs",
     "./cjs": ["./index.cjs", "./index.js"],
