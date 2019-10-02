@@ -1,48 +1,10 @@
 import { Animation, Array_of_MessageEntity, Array_of_PhotoSize, Array_of_User, Audio, Bot, Chat, Contact, Document, Game, GameHighScore, IAnimation, IAudio, IChat, IContact, IDocument, IForceReply, IGame, IInlineKeyboardMarkup, IInputMedia, IInputMediaPhoto, IInputMediaVideo, IInvoice, ILabeledPrice, ILocation, IMessageEntity, InlineKeyboardMarkup, InputFile, Invoice, IPassportData, IPhotoSize, IPoll, IReplyKeyboardMarkup, IReplyKeyboardRemove, ISticker, ISuccessfulPayment, IUser, IVenue, IVideo, IVideoNote, IVoice, Location, MessageEntity, PassportData, PhotoSize, Poll, Sticker, SuccessfulPayment, User, Venue, Video, VideoNote, Voice } from "./_internals.js";
 
-const cacheHandler = (() => { // cache handler if available. See https://github.com/tc39/proposal-weakrefs for more info.
-    if (typeof FinalizationGroup === "function" && typeof WeakRef === "function") {
-        const cache = new Map();
-        const cleanup = new FinalizationGroup(iterator => {
-            "use strict";
-            for (const key of iterator) {
-                const ref = cache.get(key);
-                if (ref && !ref.deref()) cache.delete(key);
-            }
-        });
-        return (content: Message, botId?: number) => {
-            "use strict";
-            if (botId === undefined) {
-                return content;
-            }
-            const key = `${botId}_${content.chat.id}_${content.message_id}`;
-            const ref = cache.get(key);
-            if (ref) {
-                const cached = ref.deref();
-                if (cached !== undefined) {
-                    return cached;
-                }
-            }
-            cache.set(key, new WeakRef(content));
-            cleanup.register(content, key);
-            return content;
-        }
-    }
-    return (content: Message) => {
-        "use strict";
-        return content;
-    };
-})();
-
 /** This object represents a message. */
 export class Message extends Bot implements IMessage {
     constructor(data: IMessage, token?: string | Bot) {
         "use strict";
         super(data, token);
-        const cachedValue = cacheHandler(this, this._getBotId());
-        if (cachedValue !== this) {
-            return cachedValue;
-        }
         const {
             from,
             date,

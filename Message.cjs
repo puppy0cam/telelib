@@ -1,49 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const _internals_js_1 = require("./_internals.cjs");
-const cacheHandler = (() => {
-    if (typeof FinalizationGroup === "function" && typeof WeakRef === "function") {
-        const cache = new Map();
-        const cleanup = new FinalizationGroup(iterator => {
-            "use strict";
-            for (const key of iterator) {
-                const ref = cache.get(key);
-                if (ref && !ref.deref())
-                    cache.delete(key);
-            }
-        });
-        return (content, botId) => {
-            "use strict";
-            if (botId === undefined) {
-                return content;
-            }
-            const key = `${botId}_${content.chat.id}_${content.message_id}`;
-            const ref = cache.get(key);
-            if (ref) {
-                const cached = ref.deref();
-                if (cached !== undefined) {
-                    return cached;
-                }
-            }
-            cache.set(key, new WeakRef(content));
-            cleanup.register(content, key);
-            return content;
-        };
-    }
-    return (content) => {
-        "use strict";
-        return content;
-    };
-})();
 /** This object represents a message. */
 class Message extends _internals_js_1.Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
-        const cachedValue = cacheHandler(this, this._getBotId());
-        if (cachedValue !== this) {
-            return cachedValue;
-        }
         const { from, date, chat, forward_from, forward_from_chat, forward_date, reply_to_message, edit_date, entities, caption_entities, audio, document, animation, game, photo, sticker, video, voice, video_note, contact, location, venue, poll, new_chat_members, left_chat_member, new_chat_photo, pinned_message, invoice, successful_payment, passport_data, reply_markup, } = this;
         if (from)
             this.from = new _internals_js_1.User(from, this);
