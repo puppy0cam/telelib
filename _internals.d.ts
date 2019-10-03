@@ -108,3 +108,5 @@ export * from "./PassportElementErrorSelfie.js";
 export * from "./PassportElementErrorTranslationFile.js";
 export * from "./PassportElementErrorTranslationFiles.js";
 export * from "./PassportElementErrorUnspecified.js";
+export * from "./BotController.js";
+export * from "./BotEventListener.js";

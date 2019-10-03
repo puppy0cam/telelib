@@ -48,6 +48,28 @@ export declare class Message extends Bot implements IMessage {
     connected_website?: string;
     passport_data?: PassportData;
     reply_markup?: InlineKeyboardMarkup;
+    /**
+     * Will try to retrieve the text content of the message.
+     * Possible sources include:
+     * * `text`
+     * * `caption`
+     * * `game.text`
+     *
+     * Note: You are not guarunteed to find text in a message.
+     */
+    getMessageText(): string | undefined;
+    /**
+     * Will try to retrieve the text entity content of the message.
+     * Possible sources include:
+     * * `entities`
+     * * `caption_entities`
+     * * `game.text_entities`
+     *
+     * Note: You are not guarunteed to find entities in a message,
+     * even if there is text in the message if there are no entities,
+     * the result could be undefined.
+     */
+    getMessageEntities(): MessageEntity[] | undefined;
     deleteMessage(options?: {}, timeout?: number): Promise<true>;
     editMessageCaption(options?: {
         /** New caption of the message */

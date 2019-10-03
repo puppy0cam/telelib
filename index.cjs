@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const _internals_js_1 = require("./_internals.cjs");
 var _internals_js_2 = require("./_internals.cjs");
+exports.BotController = _internals_js_2.BotController;
 exports.Animation = _internals_js_2.Animation;
 exports.Audio = _internals_js_2.Audio;
 exports.Bot = _internals_js_2.Bot;
@@ -60,4 +61,4 @@ exports.Video = _internals_js_2.Video;
 exports.VideoNote = _internals_js_2.VideoNote;
 exports.Voice = _internals_js_2.Voice;
 exports.WebhookInfo = _internals_js_2.WebhookInfo;
-exports.default = _internals_js_1.Bot;
+exports.default = _internals_js_1.BotController;

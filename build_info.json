@@ -166,8 +166,8 @@
         "signature": "b209a815904a485328677714ef8c4ddd2dcf4040154fa204d25cbf31cd4ff0f3"
       },
       "./bot.ts": {
-        "version": "3fcb0e1d1c257dd244b05331cc0445b561db3f184f661f5c4666bdbe30cd29c1",
-        "signature": "7967420b91e38682acaf69f2f33025fa05e3b8c24fc84483812ac8f50d89e19a"
+        "version": "72f03f0b5205ac85a9a99e563ab29ebf85a6c7f0761349e76b3401f82e0c82a9",
+        "signature": "0d0b7cc4a03af46d97c02229157ce1adb5da8be35f66bb783d876eb38dc412a8"
       },
       "../../../node_modules/@types/node/globals.d.ts": {
         "version": "e4461b72726848da76a31153b6b01af5e0be3b08dbfa2ec5741ad302eb20f2ed",
@@ -598,7 +598,7 @@
         "signature": "ad433b407b18a5d9f9fc3f16ebd45bfea1eca7fcfeafc8346da31c8331984b69"
       },
       "./isfile.ts": {
-        "version": "203e91453456f658d54847f81e8ccc6a06566cb43bff14b3636991ade4224e2e",
+        "version": "b733ef5f57c758182c9caacc26da961cbb64fcdbb2dc16cf8277949542c8f862",
         "signature": "b3f92c8a9fad05e8933b60cf595e355eea0ac1f2fbf2fd5300e30bc4e19c4b07"
       },
       "./isprimitive.ts": {
@@ -630,8 +630,8 @@
         "signature": "a3dbf8455c94ddfb6b1d034091fd5e021a01fa3159364b76531a91e28fff29b6"
       },
       "./message.ts": {
-        "version": "d5fa24c43d4cfedb99fa302cc535444058a3c25ecbc1318adf485c5177f85361",
-        "signature": "77a4a2720d93e377baa5804e630ed0d4aa64b341b7e28a3f2555439a8fb1c0ff"
+        "version": "a1bc319a63883095c82b1b9fa38b1902029fa03ecd02895f3cfd48f0e2268a17",
+        "signature": "6dc76d98f7f507a05eb816f577e82de3701a65b24bbb9c1e5b9799df5a2c03c6"
       },
       "./messageentity.ts": {
         "version": "c9d185e4bb7f6a4b18976e13f774e7f1aa62413058ae5071ab74d372565dc620",
@@ -813,9 +813,17 @@
         "version": "c1239d3261af28778470c1c52ae1ccfb7c3a69a6c917f52a5a7b3e0955e77f8d",
         "signature": "1fe98a605bad850b63ff28fa229a543eeab7a0dba55ac10f1d1615d1fcafc304"
       },
+      "./botcontroller.ts": {
+        "version": "f9b583951e16d664504377c79ce66ef37f3d27bc8f1d1c6c2ddf01796757ba6e",
+        "signature": "135f533f65459e273e28d9d7b1380b3731eb6c29a6574e34ebe6b7d65e0acc07"
+      },
+      "./boteventlistener.ts": {
+        "version": "6a24203bed0f9d328e84eda80cededa176c3779903788dec5c015d1b6182a980",
+        "signature": "78b8d90f6e887fdd439e7d661174a80e001cf8d5fa65cd025af82ba66f08319c"
+      },
       "./_internals.ts": {
-        "version": "b5d98af6a417a8782d5bc4e4f0cec1ad57e3b5967e6cbd6bebf4f26ed35ba2ce",
-        "signature": "b5d98af6a417a8782d5bc4e4f0cec1ad57e3b5967e6cbd6bebf4f26ed35ba2ce"
+        "version": "3277e2185da36364e63ee0d6ba67b44ef34cee6bde8a0657b0727d3cd772a089",
+        "signature": "3277e2185da36364e63ee0d6ba67b44ef34cee6bde8a0657b0727d3cd772a089"
       },
       "./animation.ts": {
         "version": "1c30e7e884c1aafc99f94722fde4078b9e7369b795554e72fc9b7061034aaa09",
@@ -921,13 +929,17 @@
         "version": "ce3c8c138d6775b7e014549d6e8043471ffeb89bac26e1e3a4b7f2b7c2edaed4",
         "signature": "98d0091fc801ddc67beb93762451af3a21c99564450f996b971038b51524f1e7"
       },
+      "./promiseallsettled.ts": {
+        "version": "06caad2c8b917e547c959520e76723c7fce83e554d16d84fe00d47e9ed5f7258",
+        "signature": "3d5b5ae758a65ac125d0df8ebd48278dbb2983cb8247d11f23bb5945a1e58ba1"
+      },
       "./_weakref.ts": {
         "version": "84f40882a91b1ac6e109e5fcb0f9262f9b55fa7606140d2b2897b97ecb26bb9a",
         "signature": "ec397cb20518f640f31ef45c48d8dc615f78db43d0bc8cf6758b3e0507ec343c"
       },
       "./index.ts": {
-        "version": "661d48067862b3bdc7d00b265aca00bd9108aedd203c10c1cbd762650af2b980",
-        "signature": "661d48067862b3bdc7d00b265aca00bd9108aedd203c10c1cbd762650af2b980"
+        "version": "ad964054169c59e83e9ec8df81698e11b4f63fb86776237d1093c38e4fda44bf",
+        "signature": "ad964054169c59e83e9ec8df81698e11b4f63fb86776237d1093c38e4fda44bf"
       },
       "./warnforunknownfield.ts": {
         "version": "bfe965d1c9e772e41af7c99f589a7bb34207b9f9b51a761a32bd2060a4d1455c",
@@ -2123,6 +2135,16 @@
         "../../../node_modules/@types/node/util.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "./botcontroller.ts": [
+        "./_internals.ts",
+        "../../../node_modules/@types/node/util.d.ts",
+        "../../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./boteventlistener.ts": [
+        "./_internals.ts",
+        "../../../node_modules/@types/node/util.d.ts",
+        "../../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "./_internals.ts": [
         "./bot.ts",
         "./file.ts",
@@ -2234,6 +2256,8 @@
         "./passportelementerrortranslationfile.ts",
         "./passportelementerrortranslationfiles.ts",
         "./passportelementerrorunspecified.ts",
+        "./botcontroller.ts",
+        "./boteventlistener.ts",
         "../../../node_modules/@types/node/util.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -2382,6 +2406,10 @@
         "../../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./objectassign.ts": [
+        "../../../node_modules/@types/node/util.d.ts",
+        "../../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "./promiseallsettled.ts": [
         "../../../node_modules/@types/node/util.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts"
       ],
@@ -3382,10 +3410,6 @@
       "./invoice.ts": [
         "./_internals.ts"
       ],
-      "../../../node_modules/buffer/index.d.ts": [
-        "../../../node_modules/@types/node/util.d.ts",
-        "../../../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "./keyboardbutton.ts": [
         "./_internals.ts"
       ],
@@ -3509,6 +3533,12 @@
       "./passportelementerrorunspecified.ts": [
         "./_internals.ts"
       ],
+      "./botcontroller.ts": [
+        "./_internals.ts"
+      ],
+      "./boteventlistener.ts": [
+        "./_internals.ts"
+      ],
       "./_internals.ts": [
         "./bot.ts",
         "./file.ts",
@@ -3619,7 +3649,9 @@
         "./passportelementerrorselfie.ts",
         "./passportelementerrortranslationfile.ts",
         "./passportelementerrortranslationfiles.ts",
-        "./passportelementerrorunspecified.ts"
+        "./passportelementerrorunspecified.ts",
+        "./botcontroller.ts",
+        "./boteventlistener.ts"
       ],
       "./animation.ts": [
         "./_internals.ts"
@@ -4119,6 +4151,10 @@
       "../../../node_modules/@types/prettier/index.d.ts": [
         "../../../node_modules/@types/node/util.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../../../node_modules/buffer/index.d.ts": [
+        "../../../node_modules/@types/node/util.d.ts",
+        "../../../node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -4168,7 +4204,7 @@
         [
           {
             "file": "./bot.ts",
-            "start": 182,
+            "start": 197,
             "length": 18,
             "messageText": "Module '\"../../../../../Users/puppy0cam/Desktop/kana/telelib/_internals.js\"' has no exported member 'IInlineQueryResult'.",
             "category": 1,
@@ -4225,7 +4261,6 @@
       "../../../node_modules/@types/form-data/index.d.ts",
       "../../../node_modules/@types/tough-cookie/index.d.ts",
       "../../../node_modules/@types/request/index.d.ts",
-      "../../../node_modules/@types/request-promise/errors.d.ts",
       "../../../node_modules/@types/bluebird/index.d.ts",
       "../../../node_modules/@types/request-promise/index.d.ts",
       "./file.ts",
@@ -4408,7 +4443,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 12475,
+                "start": 15423,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -4477,7 +4512,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 14271,
+                "start": 17219,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; latitude: number; longitude: number; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -4546,7 +4581,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 15749,
+                "start": 18697,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; media: IInputMedia; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -4615,7 +4650,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 17084,
+                "start": 20032,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -4684,7 +4719,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 18816,
+                "start": 21764,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -4753,7 +4788,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 65937,
+                "start": 68885,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ user_id: number; score: number; force?: boolean | undefined; disable_edit_message?: boolean | undefined; inline_message_id: string; }'",
                 "category": 3,
@@ -4822,7 +4857,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 69180,
+                "start": 72128,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -5147,7 +5182,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 26552,
+                "start": 29500,
                 "length": 14,
                 "messageText": "'kickChatMember' is declared here.",
                 "category": 3,
@@ -5198,7 +5233,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 51245,
+                "start": 54193,
                 "length": 7,
                 "messageText": "The expected type comes from property 'chat_id' which is declared here on type '{ chat_id: Message; question: string; options: string[]; disable_notification?: boolean | undefined; reply_to_message_id?: number | undefined; reply_markup?: IInlineKeyboardMarkup | IReplyKeyboardMarkup | IReplyKeyboardRemove | IForceReply | undefined; }'",
                 "category": 3,
@@ -5216,7 +5251,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 58165,
+                "start": 61113,
                 "length": 13,
                 "messageText": "'sendVideoNote' is declared here.",
                 "category": 3,
@@ -5492,7 +5527,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 12475,
+                "start": 15423,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -5580,7 +5615,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 14271,
+                "start": 17219,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; latitude: number; longitude: number; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -5668,7 +5703,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 15749,
+                "start": 18697,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; media: IInputMedia; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -5763,7 +5798,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 17084,
+                "start": 20032,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -5851,7 +5886,7 @@
             "relatedInformation": [
               {
                 "file": "./bot.ts",
-                "start": 18816,
+                "start": 21764,
                 "length": 17,
                 "messageText": "The expected type comes from property 'inline_message_id' which is declared here on type '{ inline_message_id: string; text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }'",
                 "category": 3,
@@ -5906,7 +5941,6 @@
       "./inputmediavideo.ts",
       "./invoice.ts",
       "./isarray.ts",
-      "../../../node_modules/buffer/index.d.ts",
       "./isbuffer.ts",
       "./isfile.ts",
       "./isprimitive.ts",
@@ -5916,6 +5950,1010 @@
       "./location.ts",
       "./loginurl.ts",
       "./maskposition.ts",
+      [
+        "./message.ts",
+        [
+          {
+            "file": "./message.ts",
+            "start": 1719,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'Message' is not assignable to type 'string | Bot | undefined'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'Message' is not assignable to type 'Bot'.",
+                      "category": 1,
+                      "code": 2322,
+                      "next": [
+                        {
+                          "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                          "category": 1,
+                          "code": 2322,
+                          "next": [
+                            {
+                              "messageText": "Type 'Message' is not assignable to type 'Bot'.",
+                              "category": 1,
+                              "code": 2322,
+                              "next": [
+                                {
+                                  "messageText": "Types of property 'editMessageCaption' are incompatible.",
+                                  "category": 1,
+                                  "code": 2326,
+                                  "next": [
+                                    {
+                                      "messageText": "Type '(options?: { caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
+                                      "category": 1,
+                                      "code": 2322,
+                                      "next": [
+                                        {
+                                          "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
+                                          "category": 1,
+                                          "code": 2322
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 1873,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 1950,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2042,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2259,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2454,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2557,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2614,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2683,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2756,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2809,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2875,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2940,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 2997,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3054,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3130,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3195,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3264,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3321,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3374,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3468,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3557,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3650,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3736,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3801,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3909,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 3997,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 4090,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 7759,
+            "length": 18,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'editMessageCaption' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options?: { caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
+                      "category": 1,
+                      "code": 2322,
+                      "next": [
+                        {
+                          "messageText": "Type 'Message' is not assignable to type 'true'.",
+                          "category": 1,
+                          "code": 2322
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 8637,
+            "length": 23,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'editMessageLiveLocation' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options: { latitude: number; longitude: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; latitude: number; longitude: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
+                      "category": 1,
+                      "code": 2322
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 9261,
+            "length": 16,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'editMessageMedia' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options: { media: IInputMedia; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; media: IInputMedia; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<Message>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
+                      "category": 1,
+                      "code": 2322
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 9839,
+            "length": 22,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'editMessageReplyMarkup' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options?: { reply_markup?: IInlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<Message>; (options: { inline_message_id: string; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; }'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
+                      "category": 1,
+                      "code": 2322
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 10321,
+            "length": 15,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'editMessageText' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options: { text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<...>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
+                      "category": 1,
+                      "code": 2328,
+                      "next": [
+                        {
+                          "messageText": "Type '{ chat_id: string | number; message_id: number; text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }'.",
+                          "category": 1,
+                          "code": 2322,
+                          "next": [
+                            {
+                              "messageText": "Types of property 'reply_markup' are incompatible.",
+                              "category": 1,
+                              "code": 2326,
+                              "next": [
+                                {
+                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
+                                  "category": 1,
+                                  "code": 2322,
+                                  "next": [
+                                    {
+                                      "messageText": "Type 'IInlineKeyboardMarkup' is missing the following properties from type 'InlineKeyboardMarkup': _sendRequest, _getBotId, addStickerToSet, answerCallbackQuery, and 63 more.",
+                                      "category": 1,
+                                      "code": 2740
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 21303,
+            "length": 8,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'sendGame' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options: { game_short_name: string; disable_notification?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '(options: { chat_id: number; game_short_name: string; disable_notification?: boolean | undefined; reply_to_message_id?: number | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<...>'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
+                      "category": 1,
+                      "code": 2328,
+                      "next": [
+                        {
+                          "messageText": "Type '{ chat_id: number; game_short_name: string; disable_notification?: boolean | undefined; reply_to_message_id?: number | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ game_short_name: string; disable_notification?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }'.",
+                          "category": 1,
+                          "code": 2322,
+                          "next": [
+                            {
+                              "messageText": "Types of property 'reply_markup' are incompatible.",
+                              "category": 1,
+                              "code": 2326,
+                              "next": [
+                                {
+                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
+                                  "category": 1,
+                                  "code": 2322,
+                                  "next": [
+                                    {
+                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
+                                      "category": 1,
+                                      "code": 2322
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 22242,
+            "length": 11,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'sendInvoice' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options: { title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; photo_url?: string | undefined; ... 11 more ...; reply_markup?: InlineKeyboardMarkup | undefined; }, timeout?: number | unde...' is not assignable to type '(options: { chat_id: number; title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; ... 13 more ...; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Prom...'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
+                      "category": 1,
+                      "code": 2328,
+                      "next": [
+                        {
+                          "messageText": "Type '{ chat_id: number; title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; ... 13 more ...; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; photo_url?: string | undefined; ... 11 more ...; reply_markup?: InlineKeyboardMarkup | undefined; }'.",
+                          "category": 1,
+                          "code": 2322,
+                          "next": [
+                            {
+                              "messageText": "Types of property 'reply_markup' are incompatible.",
+                              "category": 1,
+                              "code": 2326,
+                              "next": [
+                                {
+                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
+                                  "category": 1,
+                                  "code": 2322,
+                                  "next": [
+                                    {
+                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
+                                      "category": 1,
+                                      "code": 2322
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 31326,
+            "length": 7,
+            "code": 2322,
+            "category": 1,
+            "messageText": "Type 'number' is not assignable to type 'Message'.",
+            "relatedInformation": [
+              {
+                "file": "./bot.ts",
+                "start": 54193,
+                "length": 7,
+                "messageText": "The expected type comes from property 'chat_id' which is declared here on type '{ chat_id: Message; question: string; options: string[]; disable_notification?: boolean | undefined; reply_to_message_id?: number | undefined; reply_markup?: IInlineKeyboardMarkup | IReplyKeyboardMarkup | IReplyKeyboardRemove | IForceReply | undefined; }'",
+                "category": 3,
+                "code": 6500
+              }
+            ]
+          },
+          {
+            "file": "./message.ts",
+            "start": 40547,
+            "length": 12,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'setGameScore' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options: { user_id: number; score: number; force?: boolean | undefined; disable_edit_message?: boolean | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { user_id: number; score: number; force?: boolean | undefined; disable_edit_message?: boolean | undefined; chat_id: number; message_id: number; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
+                      "category": 1,
+                      "code": 2322
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 41263,
+            "length": 23,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'stopMessageLiveLocation' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options?: { reply_markup?: InlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<Message>; (options: { inline_message_id: string; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; }'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
+                      "category": 1,
+                      "code": 2328,
+                      "next": [
+                        {
+                          "messageText": "Type '{ chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ reply_markup?: InlineKeyboardMarkup | undefined; }'.",
+                          "category": 1,
+                          "code": 2322,
+                          "next": [
+                            {
+                              "messageText": "Types of property 'reply_markup' are incompatible.",
+                              "category": 1,
+                              "code": 2326,
+                              "next": [
+                                {
+                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
+                                  "category": 1,
+                                  "code": 2322,
+                                  "next": [
+                                    {
+                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
+                                      "category": 1,
+                                      "code": 2322
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "file": "./message.ts",
+            "start": 41749,
+            "length": 8,
+            "code": 2416,
+            "category": 1,
+            "messageText": {
+              "messageText": "Property 'stopPoll' in type 'Message' is not assignable to the same property in base type 'Bot'.",
+              "category": 1,
+              "code": 2416,
+              "next": [
+                {
+                  "messageText": "Type '(options?: { reply_markup?: InlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Poll>' is not assignable to type '(options: { chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Poll>'.",
+                  "category": 1,
+                  "code": 2322,
+                  "next": [
+                    {
+                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
+                      "category": 1,
+                      "code": 2328,
+                      "next": [
+                        {
+                          "messageText": "Type '{ chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ reply_markup?: InlineKeyboardMarkup | undefined; }'.",
+                          "category": 1,
+                          "code": 2322,
+                          "next": [
+                            {
+                              "messageText": "Types of property 'reply_markup' are incompatible.",
+                              "category": 1,
+                              "code": 2326,
+                              "next": [
+                                {
+                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
+                                  "category": 1,
+                                  "code": 2322,
+                                  "next": [
+                                    {
+                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
+                                      "category": 1,
+                                      "code": 2322
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      ],
       "./messageentity.ts",
       "./message_or_true.ts",
       "./objectkeys.ts",
@@ -6090,6 +7128,8 @@
       "./passportelementerrortranslationfile.ts",
       "./passportelementerrortranslationfiles.ts",
       "./passportelementerrorunspecified.ts",
+      "./botcontroller.ts",
+      "./boteventlistener.ts",
       "./_internals.ts",
       "./animation.ts",
       [
@@ -6834,6 +7874,7 @@
       ],
       "./inlinequeryresult.d.ts",
       "./objectassign.ts",
+      "./promiseallsettled.ts",
       "./_weakref.ts",
       "./index.ts",
       "./warnforunknownfield.ts",
@@ -6875,1010 +7916,8 @@
       "../../../node_modules/@types/mz/zlib.d.ts",
       "../../../node_modules/@types/mz/index.d.ts",
       "../../../node_modules/@types/prettier/index.d.ts",
-      [
-        "./message.ts",
-        [
-          {
-            "file": "./message.ts",
-            "start": 1719,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'Message' is not assignable to type 'string | Bot | undefined'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Type 'Message' is not assignable to type 'Bot'.",
-                      "category": 1,
-                      "code": 2322,
-                      "next": [
-                        {
-                          "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                          "category": 1,
-                          "code": 2322,
-                          "next": [
-                            {
-                              "messageText": "Type 'Message' is not assignable to type 'Bot'.",
-                              "category": 1,
-                              "code": 2322,
-                              "next": [
-                                {
-                                  "messageText": "Types of property 'editMessageCaption' are incompatible.",
-                                  "category": 1,
-                                  "code": 2326,
-                                  "next": [
-                                    {
-                                      "messageText": "Type '(options?: { caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
-                                      "category": 1,
-                                      "code": 2322,
-                                      "next": [
-                                        {
-                                          "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
-                                          "category": 1,
-                                          "code": 2322
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 1873,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 1950,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2042,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2259,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2454,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2557,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2614,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2683,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2756,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2809,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2875,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2940,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 2997,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3054,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3130,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3195,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3264,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3321,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3374,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3468,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3557,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3650,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3736,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3801,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3909,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 3997,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 4090,
-            "length": 4,
-            "code": 2345,
-            "category": 1,
-            "messageText": {
-              "messageText": "Argument of type 'this' is not assignable to parameter of type 'string | Bot | undefined'.",
-              "category": 1,
-              "code": 2345,
-              "next": [
-                {
-                  "messageText": "Type 'this' is not assignable to type 'Bot'.",
-                  "category": 1,
-                  "code": 2322
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 6016,
-            "length": 18,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'editMessageCaption' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options?: { caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; caption?: string | undefined; parse_mode?: string | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
-                      "category": 1,
-                      "code": 2322,
-                      "next": [
-                        {
-                          "messageText": "Type 'Message' is not assignable to type 'true'.",
-                          "category": 1,
-                          "code": 2322
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 6894,
-            "length": 23,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'editMessageLiveLocation' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options: { latitude: number; longitude: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; latitude: number; longitude: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
-                      "category": 1,
-                      "code": 2322
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 7518,
-            "length": 16,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'editMessageMedia' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options: { media: IInputMedia; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; media: IInputMedia; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<Message>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
-                      "category": 1,
-                      "code": 2322
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 8096,
-            "length": 22,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'editMessageReplyMarkup' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options?: { reply_markup?: IInlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<Message>; (options: { inline_message_id: string; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; }'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
-                      "category": 1,
-                      "code": 2322
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 8578,
-            "length": 15,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'editMessageText' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options: { text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<...>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
-                      "category": 1,
-                      "code": 2328,
-                      "next": [
-                        {
-                          "messageText": "Type '{ chat_id: string | number; message_id: number; text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ text: string; parse_mode?: string | undefined; disable_web_page_preview?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }'.",
-                          "category": 1,
-                          "code": 2322,
-                          "next": [
-                            {
-                              "messageText": "Types of property 'reply_markup' are incompatible.",
-                              "category": 1,
-                              "code": 2326,
-                              "next": [
-                                {
-                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
-                                  "category": 1,
-                                  "code": 2322,
-                                  "next": [
-                                    {
-                                      "messageText": "Type 'IInlineKeyboardMarkup' is missing the following properties from type 'InlineKeyboardMarkup': addStickerToSet, answerCallbackQuery, answerInlineQuery, answerPreCheckoutQuery, and 63 more.",
-                                      "category": 1,
-                                      "code": 2740
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 19560,
-            "length": 8,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'sendGame' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options: { game_short_name: string; disable_notification?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '(options: { chat_id: number; game_short_name: string; disable_notification?: boolean | undefined; reply_to_message_id?: number | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<...>'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
-                      "category": 1,
-                      "code": 2328,
-                      "next": [
-                        {
-                          "messageText": "Type '{ chat_id: number; game_short_name: string; disable_notification?: boolean | undefined; reply_to_message_id?: number | undefined; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ game_short_name: string; disable_notification?: boolean | undefined; reply_markup?: InlineKeyboardMarkup | undefined; }'.",
-                          "category": 1,
-                          "code": 2322,
-                          "next": [
-                            {
-                              "messageText": "Types of property 'reply_markup' are incompatible.",
-                              "category": 1,
-                              "code": 2326,
-                              "next": [
-                                {
-                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
-                                  "category": 1,
-                                  "code": 2322,
-                                  "next": [
-                                    {
-                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
-                                      "category": 1,
-                                      "code": 2322
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 20499,
-            "length": 11,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'sendInvoice' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options: { title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; photo_url?: string | undefined; ... 11 more ...; reply_markup?: InlineKeyboardMarkup | undefined; }, timeout?: number | unde...' is not assignable to type '(options: { chat_id: number; title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; ... 13 more ...; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Prom...'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
-                      "category": 1,
-                      "code": 2328,
-                      "next": [
-                        {
-                          "messageText": "Type '{ chat_id: number; title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; ... 13 more ...; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ title: string; description: string; payload: string; provider_token: string; start_parameter: string; currency: string; prices: ILabeledPrice[]; provider_data?: string | undefined; photo_url?: string | undefined; ... 11 more ...; reply_markup?: InlineKeyboardMarkup | undefined; }'.",
-                          "category": 1,
-                          "code": 2322,
-                          "next": [
-                            {
-                              "messageText": "Types of property 'reply_markup' are incompatible.",
-                              "category": 1,
-                              "code": 2326,
-                              "next": [
-                                {
-                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
-                                  "category": 1,
-                                  "code": 2322,
-                                  "next": [
-                                    {
-                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
-                                      "category": 1,
-                                      "code": 2322
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 29583,
-            "length": 7,
-            "code": 2322,
-            "category": 1,
-            "messageText": "Type 'number' is not assignable to type 'Message'.",
-            "relatedInformation": [
-              {
-                "file": "./bot.ts",
-                "start": 51245,
-                "length": 7,
-                "messageText": "The expected type comes from property 'chat_id' which is declared here on type '{ chat_id: Message; question: string; options: string[]; disable_notification?: boolean | undefined; reply_to_message_id?: number | undefined; reply_markup?: IInlineKeyboardMarkup | IReplyKeyboardMarkup | IReplyKeyboardRemove | IForceReply | undefined; }'",
-                "category": 3,
-                "code": 6500
-              }
-            ]
-          },
-          {
-            "file": "./message.ts",
-            "start": 38804,
-            "length": 12,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'setGameScore' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options: { user_id: number; score: number; force?: boolean | undefined; disable_edit_message?: boolean | undefined; }, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { user_id: number; score: number; force?: boolean | undefined; disable_edit_message?: boolean | undefined; chat_id: number; message_id: number; }, timeout?: number | undefined): Promise<...>; (options: { ...; }, timeout?: number | undefined): Promise<...>; }'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Type 'Promise<Message>' is not assignable to type 'Promise<true>'.",
-                      "category": 1,
-                      "code": 2322
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 39520,
-            "length": 23,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'stopMessageLiveLocation' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options?: { reply_markup?: InlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Message>' is not assignable to type '{ (options: { chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<Message>; (options: { inline_message_id: string; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined): Promise<...>; }'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
-                      "category": 1,
-                      "code": 2328,
-                      "next": [
-                        {
-                          "messageText": "Type '{ chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ reply_markup?: InlineKeyboardMarkup | undefined; }'.",
-                          "category": 1,
-                          "code": 2322,
-                          "next": [
-                            {
-                              "messageText": "Types of property 'reply_markup' are incompatible.",
-                              "category": 1,
-                              "code": 2326,
-                              "next": [
-                                {
-                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
-                                  "category": 1,
-                                  "code": 2322,
-                                  "next": [
-                                    {
-                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
-                                      "category": 1,
-                                      "code": 2322
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            "file": "./message.ts",
-            "start": 40006,
-            "length": 8,
-            "code": 2416,
-            "category": 1,
-            "messageText": {
-              "messageText": "Property 'stopPoll' in type 'Message' is not assignable to the same property in base type 'Bot'.",
-              "category": 1,
-              "code": 2416,
-              "next": [
-                {
-                  "messageText": "Type '(options?: { reply_markup?: InlineKeyboardMarkup | undefined; } | undefined, timeout?: number | undefined) => Promise<Poll>' is not assignable to type '(options: { chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }, timeout?: number | undefined) => Promise<Poll>'.",
-                  "category": 1,
-                  "code": 2322,
-                  "next": [
-                    {
-                      "messageText": "Types of parameters 'options' and 'options' are incompatible.",
-                      "category": 1,
-                      "code": 2328,
-                      "next": [
-                        {
-                          "messageText": "Type '{ chat_id: string | number; message_id: number; reply_markup?: IInlineKeyboardMarkup | undefined; }' is not assignable to type '{ reply_markup?: InlineKeyboardMarkup | undefined; }'.",
-                          "category": 1,
-                          "code": 2322,
-                          "next": [
-                            {
-                              "messageText": "Types of property 'reply_markup' are incompatible.",
-                              "category": 1,
-                              "code": 2326,
-                              "next": [
-                                {
-                                  "messageText": "Type 'IInlineKeyboardMarkup | undefined' is not assignable to type 'InlineKeyboardMarkup | undefined'.",
-                                  "category": 1,
-                                  "code": 2322,
-                                  "next": [
-                                    {
-                                      "messageText": "Type 'IInlineKeyboardMarkup' is not assignable to type 'InlineKeyboardMarkup'.",
-                                      "category": 1,
-                                      "code": 2322
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ]
-      ]
+      "../../../node_modules/@types/request-promise/errors.d.ts",
+      "../../../node_modules/buffer/index.d.ts"
     ]
   },
   "version": "3.7.0-insiders.20190922"

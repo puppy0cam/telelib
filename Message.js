@@ -70,6 +70,62 @@ class Message extends _internals_js_1.Bot {
         if (reply_markup)
             this.reply_markup = new _internals_js_1.InlineKeyboardMarkup(reply_markup, this);
     }
+    /**
+     * Will try to retrieve the text content of the message.
+     * Possible sources include:
+     * * `text`
+     * * `caption`
+     * * `game.text`
+     *
+     * Note: You are not guarunteed to find text in a message.
+     */
+    getMessageText() {
+        "use strict";
+        const text = this.text;
+        if (typeof text === "string") {
+            return text;
+        }
+        const caption = this.caption;
+        if (typeof caption === "string") {
+            return caption;
+        }
+        const game = this.game;
+        if (game != null) {
+            const game_text = game.text;
+            if (typeof game_text === "string") {
+                return game_text;
+            }
+        }
+    }
+    /**
+     * Will try to retrieve the text entity content of the message.
+     * Possible sources include:
+     * * `entities`
+     * * `caption_entities`
+     * * `game.text_entities`
+     *
+     * Note: You are not guarunteed to find entities in a message,
+     * even if there is text in the message if there are no entities,
+     * the result could be undefined.
+     */
+    getMessageEntities() {
+        "use strict";
+        const entities = this.entities;
+        if (entities != null) {
+            return entities;
+        }
+        const caption_entities = this.caption_entities;
+        if (caption_entities != null) {
+            return caption_entities;
+        }
+        const game = this.game;
+        if (game != null) {
+            const game_entities = game.text_entities;
+            if (game_entities != null) {
+                return game_entities;
+            }
+        }
+    }
     deleteMessage(options, timeout) {
         "use strict";
         return super.deleteMessage({

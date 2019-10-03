@@ -112,3 +112,5 @@ __export(require("./PassportElementErrorSelfie.cjs"));
 __export(require("./PassportElementErrorTranslationFile.cjs"));
 __export(require("./PassportElementErrorTranslationFiles.cjs"));
 __export(require("./PassportElementErrorUnspecified.cjs"));
+__export(require("./BotController.cjs"));
+__export(require("./BotEventListener.cjs"));

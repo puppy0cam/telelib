@@ -59,6 +59,58 @@ class Bot {
             return cacheHandler(this, this.#token);
         }
     }
+    static get tokenRetrieverCallbackForFileDownload() {
+        "use strict";
+        if (hasTokenRetrievalCallbackOccured >= 2) {
+            throw new ReferenceError("The callback has already been retrieved");
+        }
+        else {
+            hasTokenRetrievalCallbackOccured++;
+            return function getTokenForBot(bot) {
+                "use strict";
+                if (bot.#token) {
+                    return bot.#token;
+                }
+                else {
+                    throw new Error("No token found");
+                }
+            };
+        }
+    }
+    static getFileDownloadUrl(file, file_path) {
+        "use strict";
+        return `https://api.telegram.org/file/bot${file.#token}/${file_path}`;
+    }
+    #token;
+    #botId;
+    _sendRequest(method, data, timeout) {
+        "use strict";
+        return _internals_js_1.sendRequest(this.#token, method, data, timeout);
+    }
+    /**
+     * A helper method to allow the user id of the bot to be obtained if the token was defined.
+     * This will be helpful for optimisations when [WeakRef](https://github.com/tc39/proposal-weakrefs) becomes available.
+     */
+    _getBotId() {
+        "use strict";
+        const _botId = this.#botId;
+        if (_botId) {
+            return _botId;
+        }
+        else {
+            const token = this.#token;
+            if (typeof token === "string") {
+                const [botIdString] = token.split(":");
+                if (botIdString) {
+                    const botId = globalThis.Number(botIdString);
+                    if (isFinite(botId)) {
+                        this.#botId = botId;
+                        return botId;
+                    }
+                }
+            }
+        }
+    }
     addStickerToSet(options, timeout) {
         return _internals_js_1.tokenlessResultWrapping(_internals_js_1.True, this._sendRequest("addStickerToSet", options, timeout));
     }
@@ -254,58 +306,6 @@ class Bot {
     uploadStickerFile(options, timeout) {
         return _internals_js_1.tokenedClassWrapping(_internals_js_1.File, this._sendRequest("uploadStickerFile", options, timeout), this.#token);
     }
-    static get tokenRetrieverCallbackForFileDownload() {
-        "use strict";
-        if (hasTokenRetrievalCallbackOccured) {
-            throw new ReferenceError("The callback has already been retrieved");
-        }
-        else {
-            hasTokenRetrievalCallbackOccured = true;
-            return function getTokenForBot(bot) {
-                "use strict";
-                if (bot.#token) {
-                    return bot.#token;
-                }
-                else {
-                    throw new Error("No token found");
-                }
-            };
-        }
-    }
-    static getFileDownloadUrl(file, file_path) {
-        "use strict";
-        return `https://api.telegram.org/file/bot${file.#token}/${file_path}`;
-    }
-    #token;
-    #botId;
-    _sendRequest(method, data, timeout) {
-        "use strict";
-        return _internals_js_1.sendRequest(this.#token, method, data, timeout);
-    }
-    /**
-     * A helper method to allow the user id of the bot to be obtained if the token was defined.
-     * This will be helpful for optimisations when [WeakRef](https://github.com/tc39/proposal-weakrefs) becomes available.
-     */
-    _getBotId() {
-        "use strict";
-        const _botId = this.#botId;
-        if (_botId) {
-            return _botId;
-        }
-        else {
-            const token = this.#token;
-            if (typeof token === "string") {
-                const [botIdString] = token.split(":");
-                if (botIdString) {
-                    const botId = globalThis.Number(botIdString);
-                    if (isFinite(botId)) {
-                        this.#botId = botId;
-                        return botId;
-                    }
-                }
-            }
-        }
-    }
 }
 exports.Bot = Bot;
-let hasTokenRetrievalCallbackOccured = false;
+let hasTokenRetrievalCallbackOccured = 0;

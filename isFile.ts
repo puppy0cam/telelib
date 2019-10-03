@@ -1,4 +1,4 @@
-import Stream from "stream";
+import { Stream } from "stream";
 import { IsBuffer } from "./_internals.js";
 
 export const isFile = (value: any) => {

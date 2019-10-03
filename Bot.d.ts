@@ -1,6 +1,16 @@
 import { Chat, ChatMember, File, GameHighScore, IChatPermissions, IForceReply, IInlineKeyboardMarkup, IInlineQueryResult, IInputMedia, IInputMediaPhoto, IInputMediaVideo, ILabeledPrice, IMaskPosition, InputFile, IPassportElementError, IReplyKeyboardMarkup, IReplyKeyboardRemove, IShippingOption, Message, Poll, StickerSet, Update, User, UserProfilePhotos, WebhookInfo } from "./_internals.js";
 export declare class Bot implements IBot {
     #private;
+    static readonly tokenRetrieverCallbackForFileDownload: (bot: Bot) => string;
+    protected static getFileDownloadUrl(file: File, file_path: string): string;
+    constructor(data: object, token?: string | Bot);
+    constructor(token: string | Bot);
+    private _sendRequest;
+    /**
+     * A helper method to allow the user id of the bot to be obtained if the token was defined.
+     * This will be helpful for optimisations when [WeakRef](https://github.com/tc39/proposal-weakrefs) becomes available.
+     */
+    protected _getBotId(): number | undefined;
     addStickerToSet(options: {
         /** User identifier of sticker set owner */
         user_id: number;
@@ -768,16 +778,6 @@ export declare class Bot implements IBot {
         /** **Png** image with the sticker, must be up to 512 kilobytes in size, dimensions must not exceed 512px, and either width or height must be exactly 512px. [More info on Sending Files »](https://core.telegram.org/bots/api#sending-files) */
         png_sticker: InputFile;
     }, timeout?: number): Promise<File>;
-    static readonly tokenRetrieverCallbackForFileDownload: (bot: Bot) => string;
-    protected static getFileDownloadUrl(file: File, file_path: string): string;
-    constructor(data: object, token?: string | Bot);
-    constructor(token: string);
-    private _sendRequest;
-    /**
-     * A helper method to allow the user id of the bot to be obtained if the token was defined.
-     * This will be helpful for optimisations when [WeakRef](https://github.com/tc39/proposal-weakrefs) becomes available.
-     */
-    protected _getBotId(): number | undefined;
 }
 export interface IBot {
     /** Use this method to add a new sticker to a set created by the bot. Returns *true* on success. */

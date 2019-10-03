@@ -1,4 +1,4 @@
-import { Array_of_ChatMember, Array_of_GameHighScore, Array_of_Message, Array_of_Update, Chat, ChatMember, File, GameHighScore, IChatPermissions, IForceReply, IInlineKeyboardMarkup, IInlineQueryResult, IInputMedia, IInputMediaPhoto, IInputMediaVideo, ILabeledPrice, IMaskPosition, InputFile, IPassportElementError, IReplyKeyboardMarkup, IReplyKeyboardRemove, IShippingOption, Message, Message_or_True, Poll, sendRequest, StickerSet, tokenedClassWrapping, tokenedResultWrapping, tokenlessResultWrapping, True, Update, User, UserProfilePhotos, WebhookInfo } from "./_internals.js";
+import { BotController, Array_of_ChatMember, Array_of_GameHighScore, Array_of_Message, Array_of_Update, Chat, ChatMember, File, GameHighScore, IChatPermissions, IForceReply, IInlineKeyboardMarkup, IInlineQueryResult, IInputMedia, IInputMediaPhoto, IInputMediaVideo, ILabeledPrice, IMaskPosition, InputFile, IPassportElementError, IReplyKeyboardMarkup, IReplyKeyboardRemove, IShippingOption, Message, Message_or_True, Poll, sendRequest, StickerSet, tokenedClassWrapping, tokenedResultWrapping, tokenlessResultWrapping, True, Update, User, UserProfilePhotos, WebhookInfo } from "./_internals.js";
 
 const cacheHandler = (() => { // cache handler if available. See https://github.com/tc39/proposal-weakrefs for more info.
     if (typeof FinalizationGroup === "function" && typeof WeakRef === "function") {
@@ -31,6 +31,83 @@ const cacheHandler = (() => { // cache handler if available. See https://github.
 })();
 
 export class Bot implements IBot {
+    public static get tokenRetrieverCallbackForFileDownload() {
+        "use strict";
+        if (hasTokenRetrievalCallbackOccured >= 2) {
+            throw new ReferenceError("The callback has already been retrieved");
+        } else {
+            hasTokenRetrievalCallbackOccured++;
+            return function getTokenForBot(bot: Bot) {
+                "use strict";
+                if (bot.#token) {
+                    return bot.#token;
+                } else {
+                    throw new Error("No token found");
+                }
+            }
+        }
+    }
+    protected static getFileDownloadUrl(file: File, file_path: string) {
+        "use strict";
+        return `https://api.telegram.org/file/bot${file.#token}/${file_path}`;
+    }
+    readonly #token?: string;
+    #botId?: number;
+    public constructor(data: object, token?: string | Bot);
+    public constructor(token: string | Bot);
+    public constructor(data: any, token?: string | Bot) {
+        "use strict";
+        switch (typeof data) {
+            case "string":
+                this.#token = data;
+                break;
+            case "object":
+                Object.assign(this, data);
+                if (data instanceof Bot) {
+                    this.#token = data.#token;
+                }
+                break;
+        }
+        if (typeof token === "string") {
+            this.#token = token;
+        } else if (token instanceof Bot) {
+            this.#token = token.#token;
+            this.#botId = token.#botId || token._getBotId();
+        }
+        if (new.target === Bot) {
+            if (typeof this.#token !== "string") {
+                throw new Error("Cannot construct a Bot instance without a token unless called as a super");
+            }
+            return cacheHandler(this, this.#token);
+        }
+    }
+    private _sendRequest(method: keyof IBot, data?: any, timeout?: number): Promise<any> {
+        "use strict";
+        return sendRequest(this.#token as string, method, data, timeout);
+    }
+    /**
+     * A helper method to allow the user id of the bot to be obtained if the token was defined.
+     * This will be helpful for optimisations when [WeakRef](https://github.com/tc39/proposal-weakrefs) becomes available.
+     */
+    protected _getBotId(): number | undefined {
+        "use strict";
+        const _botId = this.#botId;
+        if (_botId) {
+            return _botId;
+        } else {
+            const token = this.#token;
+            if (typeof token === "string") {
+                const [botIdString] = token.split(":");
+                if (botIdString) {
+                    const botId = globalThis.Number(botIdString);
+                    if (isFinite(botId)) {
+                        this.#botId = botId;
+                        return botId;
+                    }
+                }
+            }
+        }
+    }
     public addStickerToSet(options: {
         /** User identifier of sticker set owner */
         user_id: number;
@@ -934,83 +1011,6 @@ export class Bot implements IBot {
         png_sticker: InputFile;
     }, timeout?: number): Promise<File> {
         return tokenedClassWrapping(File, this._sendRequest("uploadStickerFile", options, timeout), this.#token);
-    }
-    public static get tokenRetrieverCallbackForFileDownload() {
-        "use strict";
-        if (hasTokenRetrievalCallbackOccured) {
-            throw new ReferenceError("The callback has already been retrieved");
-        } else {
-            hasTokenRetrievalCallbackOccured = true;
-            return function getTokenForBot(bot: Bot) {
-                "use strict";
-                if (bot.#token) {
-                    return bot.#token;
-                } else {
-                    throw new Error("No token found");
-                }
-            }
-        }
-    }
-    protected static getFileDownloadUrl(file: File, file_path: string) {
-        "use strict";
-        return `https://api.telegram.org/file/bot${file.#token}/${file_path}`;
-    }
-    readonly #token?: string;
-    #botId?: number;
-    public constructor(data: object, token?: string | Bot);
-    public constructor(token: string);
-    public constructor(data: any, token?: string | Bot) {
-        "use strict";
-        switch (typeof data) {
-            case "string":
-                this.#token = data;
-                break;
-            case "object":
-                Object.assign(this, data);
-                if (data instanceof Bot) {
-                    this.#token = data.#token;
-                }
-                break;
-        }
-        if (typeof token === "string") {
-            this.#token = token;
-        } else if (token instanceof Bot) {
-            this.#token = token.#token;
-            this.#botId = token.#botId || token._getBotId();
-        }
-        if (new.target === Bot) {
-            if (typeof this.#token !== "string") {
-                throw new Error("Cannot construct a Bot instance without a token unless called as a super");
-            }
-            return cacheHandler(this, this.#token);
-        }
-    }
-    private _sendRequest(method: keyof IBot, data?: any, timeout?: number): Promise<any> {
-        "use strict";
-        return sendRequest(this.#token as string, method, data, timeout);
-    }
-    /**
-     * A helper method to allow the user id of the bot to be obtained if the token was defined.
-     * This will be helpful for optimisations when [WeakRef](https://github.com/tc39/proposal-weakrefs) becomes available.
-     */
-    protected _getBotId(): number | undefined {
-        "use strict";
-        const _botId = this.#botId;
-        if (_botId) {
-            return _botId;
-        } else {
-            const token = this.#token;
-            if (typeof token === "string") {
-                const [botIdString] = token.split(":");
-                if (botIdString) {
-                    const botId = globalThis.Number(botIdString);
-                    if (isFinite(botId)) {
-                        this.#botId = botId;
-                        return botId;
-                    }
-                }
-            }
-        }
     }
 }
 export interface IBot {
@@ -1920,4 +1920,4 @@ export interface IBot {
         png_sticker: InputFile;
     }, timeout?: number): Promise<File>;
 }
-let hasTokenRetrievalCallbackOccured: boolean = false;
+let hasTokenRetrievalCallbackOccured: number = 0;

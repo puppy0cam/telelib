@@ -4,9 +4,6 @@ export const aggregateListOfAllFiles = (files, cache, data) => {
     if (cache.has(data)) {
         return files;
     }
-    else if (data == null) {
-        return null;
-    }
     else if (isFile(data)) {
         files.add(data);
     }
