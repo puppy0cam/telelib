@@ -1,16 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, User, OrderInfo } from "./_internals.js";
 /** This object contains information about an incoming pre-checkout query. */
-class PreCheckoutQuery extends _internals_js_1.Bot {
+export class PreCheckoutQuery extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.from) {
-            this.from = new _internals_js_1.User(this.from, this);
+            this.from = new User(this.from, this);
         }
         if (this.order_info) {
-            this.order_info = new _internals_js_1.OrderInfo(this.order_info, this);
+            this.order_info = new OrderInfo(this.order_info, this);
         }
     }
     answerPreCheckoutQuery(options, timeout) {
@@ -21,4 +19,3 @@ class PreCheckoutQuery extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.PreCheckoutQuery = PreCheckoutQuery;

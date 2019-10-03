@@ -1,20 +1,17 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, Array_of_PhotoSize, Array_of_MessageEntity, Animation } from "./_internals.js";
 /** This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers. */
-class Game extends _internals_js_1.Bot {
+export class Game extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.photo) {
-            this.photo = _internals_js_1.Array_of_PhotoSize(this.photo, this);
+            this.photo = Array_of_PhotoSize(this.photo, this);
         }
         if (this.text_entities) {
-            this.text_entities = _internals_js_1.Array_of_MessageEntity(this.text_entities, this);
+            this.text_entities = Array_of_MessageEntity(this.text_entities, this);
         }
         if (this.animation) {
-            this.animation = new _internals_js_1.Animation(this.animation, this);
+            this.animation = new Animation(this.animation, this);
         }
     }
 }
-exports.Game = Game;

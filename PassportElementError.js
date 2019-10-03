@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, PassportElementErrorDataField, PassportElementErrorFile, PassportElementErrorFiles, PassportElementErrorFrontSide, PassportElementErrorReverseSide, PassportElementErrorSelfie, PassportElementErrorTranslationFile, PassportElementErrorTranslationFiles, PassportElementErrorUnspecified } from "./_internals.js";
 /**
  * This object represents an error in the Telegram Passport element which was submitted that should be resolved by the user. It should be one of:
  * * [PassportElementErrorDataField](https://core.telegram.org/bots/api#passportelementerrordatafield)
@@ -13,32 +11,31 @@ const _internals_js_1 = require("./_internals.js");
  * * [PassportElementErrorTranslationFiles](https://core.telegram.org/bots/api#passportelementerrortranslationfiles)
  * * [PassportElementErrorUnspecified](https://core.telegram.org/bots/api#passportelementerrorunspecified)
  */
-class PassportElementError extends _internals_js_1.Bot {
+export class PassportElementError extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (new.target === PassportElementError) {
             switch (data.source) {
                 case "data":
-                    return new _internals_js_1.PassportElementErrorDataField(data, token);
+                    return new PassportElementErrorDataField(data, token);
                 case "front_side":
-                    return new _internals_js_1.PassportElementErrorFrontSide(data, token);
+                    return new PassportElementErrorFrontSide(data, token);
                 case "reverse_side":
-                    return new _internals_js_1.PassportElementErrorReverseSide(data, token);
+                    return new PassportElementErrorReverseSide(data, token);
                 case "selfie":
-                    return new _internals_js_1.PassportElementErrorSelfie(data, token);
+                    return new PassportElementErrorSelfie(data, token);
                 case "file":
-                    return new _internals_js_1.PassportElementErrorFile(data, token);
+                    return new PassportElementErrorFile(data, token);
                 case "files":
-                    return new _internals_js_1.PassportElementErrorFiles(data, token);
+                    return new PassportElementErrorFiles(data, token);
                 case "translation_file":
-                    return new _internals_js_1.PassportElementErrorTranslationFile(data, token);
+                    return new PassportElementErrorTranslationFile(data, token);
                 case "translation_files":
-                    return new _internals_js_1.PassportElementErrorTranslationFiles(data, token);
+                    return new PassportElementErrorTranslationFiles(data, token);
                 case "unspecified":
-                    return new _internals_js_1.PassportElementErrorUnspecified(data, token);
+                    return new PassportElementErrorUnspecified(data, token);
             }
         }
     }
 }
-exports.PassportElementError = PassportElementError;

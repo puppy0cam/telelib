@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot } from "./_internals.js";
 /** This object represents a portion of the price for goods or services. */
-class LabeledPrice extends _internals_js_1.Bot {
+export class LabeledPrice extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
     }
 }
-exports.LabeledPrice = LabeledPrice;

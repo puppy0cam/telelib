@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const stream_1 = require("stream");
-const _internals_js_1 = require("./_internals.js");
-exports.isFile = (value) => {
+import { Stream } from "stream";
+import { IsBuffer } from "./_internals.js";
+export const isFile = (value) => {
     "use strict";
-    return value instanceof stream_1.Stream || _internals_js_1.IsBuffer(value);
+    return value instanceof Stream || IsBuffer(value);
 };

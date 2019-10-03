@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot } from "./_internals.js";
 /** A placeholder, currently holds no information. Use [BotFather](https://t.me/botfather) to set up your game. */
-class CallbackGame extends _internals_js_1.Bot {
+export class CallbackGame extends Bot {
 }
-exports.CallbackGame = CallbackGame;

@@ -1,7 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
-class BotEventListener {
+import { Message } from "./_internals.js";
+export class BotEventListener {
     constructor(type, callback, ...filters) {
         if (typeof type === "string") {
             this.type = type;
@@ -57,7 +55,7 @@ class BotEventListener {
                 cache = new WeakMap();
                 UpdateFilterCache.set(update, cache);
             }
-            if (eventContent instanceof _internals_js_1.Message && typeof command === "string") {
+            if (eventContent instanceof Message && typeof command === "string") {
                 const entities = eventContent.getMessageEntities();
                 const text = eventContent.getMessageText();
                 if (entities != null && text != null) {
@@ -139,6 +137,5 @@ class BotEventListener {
         }
     }
 }
-exports.BotEventListener = BotEventListener;
 const UpdateFilterCache = new WeakMap();
 const HasReceivedUpdateCache = new WeakMap();

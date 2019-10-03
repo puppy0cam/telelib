@@ -1,20 +1,18 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, User, Location } from "./_internals.js";
 /**
  * Represents a [result](https://core.telegram.org/bots/api#inlinequeryresult) of an inline query that was chosen by the user and sent to their chat partner.
  *
  * **Note:** It is necessary to enable [inline feedback](https://core.telegram.org/bots/inline#collecting-feedback) via [@Botfather](https://t.me/botfather) in order to receive these objects in updates.
  */
-class ChosenInlineResult extends _internals_js_1.Bot {
+export class ChosenInlineResult extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.from) {
-            this.from = new _internals_js_1.User(this.from, this);
+            this.from = new User(this.from, this);
         }
         if (this.location) {
-            this.location = new _internals_js_1.Location(this.location, this);
+            this.location = new Location(this.location, this);
         }
     }
     editMessageCaption(options, timeout) {
@@ -53,4 +51,3 @@ class ChosenInlineResult extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.ChosenInlineResult = ChosenInlineResult;

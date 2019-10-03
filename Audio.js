@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { PhotoSize, File } from "./_internals.js";
 /** This object represents an audio file to be treated as music by the Telegram clients. */
-class Audio extends _internals_js_1.File {
+export class Audio extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.thumb) {
-            this.thumb = new _internals_js_1.PhotoSize(this.thumb, this);
+            this.thumb = new PhotoSize(this.thumb, this);
         }
     }
     sendAudio(options, timeout) {
@@ -18,4 +16,3 @@ class Audio extends _internals_js_1.File {
         }, timeout);
     }
 }
-exports.Audio = Audio;

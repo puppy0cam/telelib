@@ -1,17 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, User, Location } from "./_internals.js";
 /** This object represents an incoming inline query. When the user sends an empty query, your bot could return some default or trending results. */
-class InlineQuery extends _internals_js_1.Bot {
+export class InlineQuery extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.from) {
-            this.from = new _internals_js_1.User(this.from, this);
+            this.from = new User(this.from, this);
         }
         if (this.location) {
-            this.location = new _internals_js_1.Location(this.location, this);
+            this.location = new Location(this.location, this);
         }
     }
 }
-exports.InlineQuery = InlineQuery;

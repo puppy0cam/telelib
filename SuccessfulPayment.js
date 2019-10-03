@@ -1,14 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, OrderInfo } from "./_internals.js";
 /** This object contains basic information about a successful payment. */
-class SuccessfulPayment extends _internals_js_1.Bot {
+export class SuccessfulPayment extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.order_info) {
-            this.order_info = new _internals_js_1.OrderInfo(this.order_info, this);
+            this.order_info = new OrderInfo(this.order_info, this);
         }
     }
 }
-exports.SuccessfulPayment = SuccessfulPayment;

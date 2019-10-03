@@ -1,7 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const unknownFieldsMap = new WeakMap();
-exports.warnForUnknownFields = (target, key) => {
+export const warnForUnknownFields = (target, key) => {
     "use strict";
     const fields = unknownFieldsMap.get(target) || unknownFieldsMap.set(target, new Set()).get(target);
     if (!fields.has(key)) {

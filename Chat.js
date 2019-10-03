@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, ChatPhoto, Message } from "./_internals.js";
 const cacheHandler = (() => {
     if (typeof FinalizationGroup === "function" && typeof WeakRef === "function") {
         const cache = new Map();
@@ -36,17 +34,17 @@ const cacheHandler = (() => {
     };
 })();
 /** This object represents a chat. */
-class Chat extends _internals_js_1.Bot {
+export class Chat extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         const cachedValue = cacheHandler(this, this._getBotId());
         const { photo, pinned_message, } = data;
         if (photo) {
-            cachedValue.photo = new _internals_js_1.ChatPhoto(photo, this);
+            cachedValue.photo = new ChatPhoto(photo, this);
         }
         if (pinned_message) {
-            cachedValue.pinned_message = new _internals_js_1.Message(pinned_message, this);
+            cachedValue.pinned_message = new Message(pinned_message, this);
         }
         return cachedValue;
     }
@@ -381,4 +379,3 @@ class Chat extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.Chat = Chat;

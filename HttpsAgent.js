@@ -1,7 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const https_1 = require("https");
-exports.HttpsAgent = new https_1.Agent({
+import { Agent } from "https";
+export const HttpsAgent = new Agent({
     host: "api.telegram.org",
     keepAlive: true,
     keepAliveMsecs: 10000,

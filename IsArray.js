@@ -1,3 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.IsArray = Array.isArray;
+export const IsArray = Array.isArray;

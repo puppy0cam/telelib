@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot } from "./_internals.js";
 const cacheHandler = (() => {
     if (typeof FinalizationGroup === "function" && typeof WeakRef === "function") {
         const cache = new Map();
@@ -36,7 +34,7 @@ const cacheHandler = (() => {
     };
 })();
 /** This object represents a Telegram user or bot. */
-class User extends _internals_js_1.Bot {
+export class User extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
@@ -132,4 +130,3 @@ class User extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.User = User;

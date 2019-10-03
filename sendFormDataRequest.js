@@ -1,16 +1,11 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const request_1 = __importDefault(require("request"));
-const _internals_js_1 = require("./_internals.js");
-exports.sendFormDataRequest = (token, method, content, timeout) => {
+import request from "request";
+import { HttpsAgent as agent, prepareFormRequestOptions } from "./_internals.js";
+export const sendFormDataRequest = (token, method, content, timeout) => {
     "use strict";
-    return new Promise((resolve, reject) => request_1.default(`https://api.telegram.org/bot${token}/${method}`, {
-        agent: _internals_js_1.HttpsAgent,
+    return new Promise((resolve, reject) => request(`https://api.telegram.org/bot${token}/${method}`, {
+        agent,
         timeout,
-        formData: _internals_js_1.prepareFormRequestOptions(content),
+        formData: prepareFormRequestOptions(content),
         gzip: true,
         json: true,
         method: "POST",

@@ -1,20 +1,18 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, User, Message } from "./_internals.js";
 /**
  * This object represents an incoming callback query from a callback button in an [inline keyboard](https://core.telegram.org/bots#inline-keyboards-and-on-the-fly-updating). If the button that originated the query was attached to a message sent by the bot, the field *message* will be present. If the button was attached to a message sent via the bot (in [inline mode](https://core.telegram.org/bots/api#inline-mode)), the field *inline_message_id* will be present. Exactly one of the fields data or *game_short_name* will be present.
  *
  * >**NOTE:** After the user presses a callback button, Telegram clients will display a progress bar until you call [answerCallbackQuery](https://core.telegram.org/bots/api#answercallbackquery). It is, therefore, necessary to react by calling [answerCallbackQuery](https://core.telegram.org/bots/api#answercallbackquery) even if no notification to the user is needed (e.g., without specifying any of the optional parameters).
  */
-class CallbackQuery extends _internals_js_1.Bot {
+export class CallbackQuery extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.from) {
-            this.from = new _internals_js_1.User(this.from, this);
+            this.from = new User(this.from, this);
         }
         if (this.message) {
-            this.message = new _internals_js_1.Message(this.message, this);
+            this.message = new Message(this.message, this);
         }
     }
     answerCallbackQuery(options, timeout) {
@@ -97,4 +95,3 @@ class CallbackQuery extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.CallbackQuery = CallbackQuery;

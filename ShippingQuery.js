@@ -1,16 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, User, ShippingAddress } from "./_internals.js";
 /** This object contains information about an incoming shipping query. */
-class ShippingQuery extends _internals_js_1.Bot {
+export class ShippingQuery extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.from) {
-            this.from = new _internals_js_1.User(this.from, token);
+            this.from = new User(this.from, token);
         }
         if (this.shipping_address) {
-            this.shipping_address = new _internals_js_1.ShippingAddress(this.shipping_address, token);
+            this.shipping_address = new ShippingAddress(this.shipping_address, token);
         }
     }
     answerShippingQuery(options, timeout) {
@@ -21,4 +19,3 @@ class ShippingQuery extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.ShippingQuery = ShippingQuery;

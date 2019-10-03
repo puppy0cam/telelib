@@ -1,3 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ObjectKeys = Object.keys;
+export const ObjectKeys = Object.keys;

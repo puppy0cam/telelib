@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot } from "./_internals.js";
 /** This object represents a phone contact. */
-class Contact extends _internals_js_1.Bot {
+export class Contact extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
@@ -18,4 +16,3 @@ class Contact extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.Contact = Contact;

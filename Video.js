@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { File } from "./_internals.js";
 /** This object represents a video file. */
-class Video extends _internals_js_1.File {
+export class Video extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
@@ -15,4 +13,3 @@ class Video extends _internals_js_1.File {
         }, timeout);
     }
 }
-exports.Video = Video;

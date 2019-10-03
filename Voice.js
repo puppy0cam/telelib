@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { File } from "./_internals.js";
 /** This object represents a voice note. */
-class Voice extends _internals_js_1.File {
+export class Voice extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
@@ -15,4 +13,3 @@ class Voice extends _internals_js_1.File {
         }, timeout);
     }
 }
-exports.Voice = Voice;

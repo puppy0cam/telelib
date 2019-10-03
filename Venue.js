@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Location, Bot, } from "./_internals.js";
 /** This object represents a venue. */
-class Venue extends _internals_js_1.Bot {
+export class Venue extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.location) {
-            this.location = new _internals_js_1.Location(this.location, this);
+            this.location = new Location(this.location, this);
         }
     }
     sendVenue(options, timeout) {
@@ -31,4 +29,3 @@ class Venue extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.Venue = Venue;

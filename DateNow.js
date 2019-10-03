@@ -1,3 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.DateNow = Date.now;
+export const DateNow = Date.now;

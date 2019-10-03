@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { File, PhotoSize } from "./_internals.js";
 /** This object represents an animation file (GIF or H.264/MPEG-4 AVC video without sound). */
-class Animation extends _internals_js_1.File {
+export class Animation extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.thumb) {
-            this.thumb = new _internals_js_1.PhotoSize(this.thumb, this);
+            this.thumb = new PhotoSize(this.thumb, this);
         }
     }
     sendAnimation(options, timeout) {
@@ -25,4 +23,3 @@ class Animation extends _internals_js_1.File {
         }, timeout);
     }
 }
-exports.Animation = Animation;

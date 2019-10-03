@@ -1,16 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { File, PhotoSize, MaskPosition } from "./_internals.js";
 /** This object represents a sticker. */
-class Sticker extends _internals_js_1.File {
+export class Sticker extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.thumb) {
-            this.thumb = new _internals_js_1.PhotoSize(this.thumb, this);
+            this.thumb = new PhotoSize(this.thumb, this);
         }
         if (this.mask_position) {
-            this.mask_position = new _internals_js_1.MaskPosition(this.mask_position, this);
+            this.mask_position = new MaskPosition(this.mask_position, this);
         }
     }
     sendSticker(options, timeout) {
@@ -56,4 +54,3 @@ class Sticker extends _internals_js_1.File {
         }, timeout);
     }
 }
-exports.Sticker = Sticker;

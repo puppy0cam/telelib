@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { File, PhotoSize } from "./_internals.js";
 /** This object represents a [video message](https://telegram.org/blog/video-messages-and-telescope) (available in Telegram apps as of [v.4.0](https://telegram.org/blog/video-messages-and-telescope)). */
-class VideoNote extends _internals_js_1.File {
+export class VideoNote extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.thumb) {
-            this.thumb = new _internals_js_1.PhotoSize(this.thumb, this);
+            this.thumb = new PhotoSize(this.thumb, this);
         }
     }
     sendVideoNote(options, timeout) {
@@ -18,4 +16,3 @@ class VideoNote extends _internals_js_1.File {
         }, timeout);
     }
 }
-exports.VideoNote = VideoNote;

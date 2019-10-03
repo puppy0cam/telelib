@@ -1,14 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, Array_of_LabeledPrice } from "./_internals.js";
 /** This object represents one shipping option. */
-class ShippingOption extends _internals_js_1.Bot {
+export class ShippingOption extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.prices) {
-            this.prices = _internals_js_1.Array_of_LabeledPrice(this.prices, this);
+            this.prices = Array_of_LabeledPrice(this.prices, this);
         }
     }
 }
-exports.ShippingOption = ShippingOption;

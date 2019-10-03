@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { File } from "./_internals.js";
 /** This object represents a file uploaded to Telegram Passport. Currently all Telegram Passport files are in JPEG format when decrypted and don't exceed 10MB. */
-class PassportFile extends _internals_js_1.File {
+export class PassportFile extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
@@ -11,4 +9,3 @@ class PassportFile extends _internals_js_1.File {
         }
     }
 }
-exports.PassportFile = PassportFile;

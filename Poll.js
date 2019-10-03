@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, Array_of_PollOption } from "./_internals.js";
 /** This object contains information about a poll. */
-class Poll extends _internals_js_1.Bot {
+export class Poll extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.options) {
-            this.options = _internals_js_1.Array_of_PollOption(this.options, this);
+            this.options = Array_of_PollOption(this.options, this);
         }
     }
     getTotalVoteCount() {
@@ -20,4 +18,3 @@ class Poll extends _internals_js_1.Bot {
         return total;
     }
 }
-exports.Poll = Poll;

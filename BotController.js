@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, BotEventListener } from "./_internals.js";
 const cacheHandler = (() => {
     if (typeof FinalizationGroup === "function" && typeof WeakRef === "function") {
         const cache = new Map();
@@ -40,7 +38,7 @@ const cacheHandler = (() => {
         return content;
     };
 })();
-class BotController extends _internals_js_1.Bot {
+export class BotController extends Bot {
     constructor(token) {
         "use strict";
         super(token);
@@ -86,10 +84,10 @@ class BotController extends _internals_js_1.Bot {
     }
     on() {
         "use strict";
-        if (arguments[0] instanceof _internals_js_1.BotEventListener) {
+        if (arguments[0] instanceof BotEventListener) {
             return arguments[0];
         }
-        const listener = new _internals_js_1.BotEventListener(...arguments);
+        const listener = new BotEventListener(...arguments);
         this.#eventListeners.add(listener);
         return listener;
     }
@@ -142,7 +140,6 @@ class BotController extends _internals_js_1.Bot {
     #botInformation;
     #eventListeners;
 }
-exports.BotController = BotController;
 const TokenGetter = BotController.tokenRetrieverCallbackForFileDownload;
 const onUncaughtErrorInUpdateEmission = (error) => {
     "use strict";

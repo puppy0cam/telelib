@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, PhotoSize } from "./_internals.js";
 /** This object represents a chat photo. */
-class ChatPhoto extends _internals_js_1.Bot {
+export class ChatPhoto extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
@@ -13,12 +11,12 @@ class ChatPhoto extends _internals_js_1.Bot {
     toPhotoSizes() {
         "use strict";
         return [
-            new _internals_js_1.PhotoSize({
+            new PhotoSize({
                 file_id: this.small_file_id,
                 height: 160,
                 width: 160,
             }, this),
-            new _internals_js_1.PhotoSize({
+            new PhotoSize({
                 file_id: this.big_file_id,
                 height: 640,
                 width: 640,
@@ -26,4 +24,3 @@ class ChatPhoto extends _internals_js_1.Bot {
         ];
     }
 }
-exports.ChatPhoto = ChatPhoto;

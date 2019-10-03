@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { InputMedia } from "./_internals.js";
 /** Represents a video to be sent. */
-class InputMediaVideo extends _internals_js_1.InputMedia {
+export class InputMediaVideo extends InputMedia {
     constructor(data, token) {
         "use strict";
         super(data, token);
     }
 }
-exports.InputMediaVideo = InputMediaVideo;

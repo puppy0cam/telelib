@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { File, PhotoSize } from "./_internals.js";
 /** This object represents a general file (as opposed to [photos](https://core.telegram.org/bots/api#photosize), [voice messages](https://core.telegram.org/bots/api#voice) and [audio files](https://core.telegram.org/bots/api#audio)). */
-class Document extends _internals_js_1.File {
+export class Document extends File {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.thumb) {
-            this.thumb = new _internals_js_1.PhotoSize(this.thumb, this);
+            this.thumb = new PhotoSize(this.thumb, this);
         }
     }
     sendDocument(options, timeout) {
@@ -18,4 +16,3 @@ class Document extends _internals_js_1.File {
         }, timeout);
     }
 }
-exports.Document = Document;

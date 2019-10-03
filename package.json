@@ -1,11 +1,12 @@
 {
   "name": "telelib",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "An interface for the Telegram Bot API",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "module": "./index.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/puppy0cam/telelib.git"
@@ -22,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/puppy0cam/telelib/issues"
   },
-  "type": "commonjs",
+  "type": "module",
   "homepage": "https://github.com/puppy0cam/telelib#readme",
   "dependencies": {
     "request": "^2.88.0",

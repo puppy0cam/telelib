@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, User } from "./_internals.js";
 /** This object contains information about one member of a chat. */
-class ChatMember extends _internals_js_1.Bot {
+export class ChatMember extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.user) {
-            this.user = new _internals_js_1.User(this.user, this);
+            this.user = new User(this.user, this);
         }
         if (this.until_date) {
             this.until_date = new Date(this.until_date.valueOf() < 9999999999 ? this.until_date.valueOf() * 1000 : this.until_date);
@@ -103,4 +101,3 @@ class ChatMember extends _internals_js_1.Bot {
         }
     }
 }
-exports.ChatMember = ChatMember;

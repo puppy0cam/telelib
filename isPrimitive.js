@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isPrimitive = (value) => {
+export const isPrimitive = (value) => {
     "use strict";
     switch (typeof value) {
         case "object":

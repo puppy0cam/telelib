@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot } from "./_internals.js";
 /** This object represents on size of a photo or a [file](https://core.telegram.org/bots/api#document) / [sticker](https://core.telegram.org/bots/api#sticker) thumbnail */
-class PhotoSize extends _internals_js_1.Bot {
+export class PhotoSize extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
@@ -22,4 +20,3 @@ class PhotoSize extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.PhotoSize = PhotoSize;

@@ -1,17 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Bot, Array_of_EncryptedPassportElement, EncryptedCredentials } from "./_internals.js";
 /** Contains information about Telegram Passport data shared with the bot by the user. */
-class PassportData extends _internals_js_1.Bot {
+export class PassportData extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.data) {
-            this.data = _internals_js_1.Array_of_EncryptedPassportElement(this.data, this);
+            this.data = Array_of_EncryptedPassportElement(this.data, this);
         }
         if (this.credentials) {
-            this.credentials = new _internals_js_1.EncryptedCredentials(this.credentials, this);
+            this.credentials = new EncryptedCredentials(this.credentials, this);
         }
     }
 }
-exports.PassportData = PassportData;

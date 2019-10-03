@@ -1,13 +1,11 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const _internals_js_1 = require("./_internals.js");
+import { Array_of_Sticker, Bot } from "./_internals.js";
 /** This object represents a sticker set. */
-class StickerSet extends _internals_js_1.Bot {
+export class StickerSet extends Bot {
     constructor(data, token) {
         "use strict";
         super(data, token);
         if (this.stickers) {
-            this.stickers = _internals_js_1.Array_of_Sticker(this.stickers, this);
+            this.stickers = Array_of_Sticker(this.stickers, this);
         }
     }
     addStickerToSet(options, timeout) {
@@ -25,4 +23,3 @@ class StickerSet extends _internals_js_1.Bot {
         }, timeout);
     }
 }
-exports.StickerSet = StickerSet;
